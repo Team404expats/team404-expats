@@ -1186,14 +1186,16 @@ body.lock {
     }
   }
   @media (min-width: $md4+px) {
+    &__button {
+      max-width: 268px;
+    }
+  }
+
+  @media (min-width: 600px) {
     &__content-blocks {
       display: grid;
       grid-template-columns: 268px 268px;
       align-self: center;
-    }
-
-    &__button {
-      max-width: 268px;
     }
   }
   @media (min-width: $md3+px) {
@@ -1509,6 +1511,7 @@ body.lock {
   perspective: 150rem;
   position: relative;
   flex: 0 0 30%;
+  background-color: transparent;
 }
 
 .card-side {
@@ -1525,11 +1528,13 @@ body.lock {
   transform: rotateY(-180deg);
 }
 
-.card:hover .card-side.front {
+.card:hover .card-side.front,
+.card:active .card-side.front {
   transform: rotateY(180deg);
 }
 
-.card:hover .card-side.back {
+.card:hover .card-side.back,
+.card:active .card-side.back {
   transform: rotateY(0deg);
 }
 
@@ -1549,6 +1554,12 @@ body.lock {
   &_green {
     background-color: $accentColor;
     color: $lightColor;
+  }
+
+  &_light {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: $accentColor;
+    max-height: 600px;
   }
 
   // .full-card_white-border
@@ -1657,6 +1668,10 @@ body.lock {
     top: 3%;
     right: 8%;
     filter: drop-shadow(0px 2px 8px #ffffff);
+
+    &_green {
+      filter: drop-shadow(0px 2px 8px #95d2af);
+    }
     img {
       width: 40px;
       height: 26px;
@@ -1706,6 +1721,21 @@ body.lock {
         }
       }
     }
+
+    &_grid {
+      display: grid;
+      grid-template-columns: 65% 45%;
+      grid-template-rows: auto;
+      gap: 4px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li {
+          font-size: 12px;
+        }
+      }
+    }
   }
 
   &__actions {
@@ -1727,6 +1757,18 @@ body.lock {
     height: 2px;
     bottom: -7px;
     left: 0;
+  }
+
+  &_green {
+    &:after {
+      content: "";
+      background-color: $accentColor;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -7px;
+      left: 0;
+    }
   }
 }
 
@@ -1907,7 +1949,7 @@ body.lock {
     align-items: center;
     width: 100vw;
     max-width: 1440px;
-    height: 95vh;
+    height: 85vh;
     min-height: 570px;
     max-height: 800px;
     background-color: $accentColor;
@@ -1993,8 +2035,17 @@ body.lock {
     }
   }
   &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 32px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -2056,8 +2107,15 @@ body.lock {
     max-width: 340px;
     width: 100%;
     position: relative;
+
     @media (min-width: $md3+px) {
       max-width: 1100px;
+      &_flex {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-evenly;
+      }
     }
   }
 
@@ -2158,7 +2216,7 @@ body.lock {
     }
 
     &__preparation-text {
-      height: 360px;
+      height: 340px;
     }
   }
 }

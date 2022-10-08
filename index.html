@@ -300,33 +300,33 @@
                 </div>
                 <div class="icons-block__icons">
                   <div class="icons-block__icon">
-                    <img src="./assets/image 9.svg" alt="icon plan" />
+                    <img src="./assets/image 9.jpg" alt="icon plan" />
                     <div class="text_small text_dark">
                       Personal training plans
                     </div>
                   </div>
                   <div class="icons-block__icon">
-                    <img src="./assets/image 9-1.svg" alt="icon plan" />
+                    <img src="./assets/image 10.jpg" alt="icon plan" />
                     <div class="text_small text_dark">
                       Trainings integrate and adapt to your lifestyle
                     </div>
                   </div>
                   <div class="icons-block__icon">
-                    <img src="./assets/image 9-2.svg" alt="icon plan" />
+                    <img src="./assets/image 10-1.jpg" alt="icon plan" />
                     <div class="text_small text_dark">24/7 coach support</div>
                   </div>
                   <div class="icons-block__icon">
-                    <img src="./assets/image 9-4.svg" alt="icon plan" />
+                    <img src="./assets/image 9-1.jpg" alt="icon plan" />
                     <div class="text_small text_dark">Team events</div>
                   </div>
                   <div class="icons-block__icon">
-                    <img src="./assets/image 9-3.svg" alt="icon plan" />
+                    <img src="./assets/image 9-2.jpg" alt="icon plan" />
                     <div class="text_small text_dark">
                       International community
                     </div>
                   </div>
                   <div class="icons-block__icon">
-                    <img src="./assets/image 9-5.svg" alt="icon plan" />
+                    <img src="./assets/image 10-2.jpg" alt="icon plan" />
                     <div class="text_small text_dark">
                       Training camps all over the worlds
                     </div>
@@ -616,7 +616,7 @@
           <div class="_container _flex-col team_wrapper">
             <div class="team__title subtitle2 subtitle2_light">Team</div>
             <div class="team__content team__content_flex">
-              <div class="card">
+              <button class="card">
                 <div class="card-side front">
                   <div class="team__short-card short-card rbg">
                     <img src="./assets/team-member-1.jpg" alt="step1-photo" />
@@ -686,8 +686,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
+              </button>
+              <button class="card">
                 <div class="card-side front">
                   <div class="team__short-card short-card rbg">
                     <img src="./assets/team-member-2.jpg" alt="step1-photo" />
@@ -757,8 +757,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
+              </button>
+              <button class="card">
                 <div class="card-side front">
                   <div class="team__short-card short-card rbg">
                     <img
@@ -828,7 +828,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </button>
             </div>
           </div>
         </section>
@@ -868,8 +868,11 @@
                   <a href="#popup-form" class="button button_light popup-link"
                     >Buy membership</a
                   >
-
-                  <div class="link underlined">Learn more</div>
+                  <a
+                    href="#popup-package-details"
+                    class="link link_light underlined popup-link"
+                    >Learn more</a
+                  >
                 </div>
               </div>
               <div
@@ -906,7 +909,11 @@
                   <a href="#popup-form" class="button button_light popup-link"
                     >Buy membership</a
                   >
-                  <div class="link underlined">Learn more</div>
+                  <a
+                    href="#popup-package-details"
+                    class="link link_light underlined popup-link"
+                    >Learn more</a
+                  >
                 </div>
               </div>
               <div
@@ -941,7 +948,11 @@
                   <a href="#popup-form" class="button button_light popup-link"
                     >Buy membership</a
                   >
-                  <div class="link underlined">Learn more</div>
+                  <a
+                    href="#popup-package-details"
+                    class="link link_light underlined popup-link"
+                    >Learn more</a
+                  >
                 </div>
               </div>
             </div>
@@ -1003,6 +1014,7 @@
                 name="name"
                 placeholder="Name"
                 class="form__input"
+                required
               />
               <input
                 id="form-number"
@@ -1010,6 +1022,7 @@
                 name="number"
                 placeholder="Number"
                 class="form__input"
+                required
               />
               <input
                 type="submit"
@@ -1203,6 +1216,175 @@
               </div>
               <div class="programs-description__photo">
                 <img src="./assets/program-photo-10k.jpg" alt="10k photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-package-details" class="popup">
+      <div class="popup__body">
+        <div class="popup__content popup__content-programs content-programs">
+          <a class="popup__close close-popup"
+            ><img src="/assets/icon-close.svg" alt="icon-close"
+          /></a>
+
+          <!-- <div class="content-programs__actions tab">
+            <div
+              onclick="openCity(event, 'ten-k')"
+              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_ten-k"
+            >
+              My First 10k
+            </div>
+            <div
+              onclick="openCity(event, 'twenty-one-k')"
+              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_twenty-one-k"
+            >
+              My First 21k
+            </div>
+            <div
+              onclick="openCity(event, 'forty-two-k')"
+              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_forty-two-k"
+            >
+              My First 42k
+            </div>
+            <div
+              onclick="openCity(event, 'ironman')"
+              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_ironman"
+            >
+              My First IRONMAN
+            </div>
+          </div> -->
+          <div
+            class="content-programs__description-wrapper content-programs__description-wrapper_flex"
+          >
+            <div
+              class="packages__package-card package-card full-card card full-card_light"
+            >
+              <div class="package-card__image package-card__image_green">
+                <img
+                  src="./assets/speedometer-small-green.svg"
+                  alt="step1-photo"
+                />
+              </div>
+
+              <div
+                class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+              >
+                Economy
+              </div>
+              <div class="package-card__price-text price">
+                <div class="price__text_small strikethrough">120 sar</div>
+                <div class="price__text_big">180 sar</div>
+              </div>
+              <div
+                class="package-card__discription-text package-card__discription-text_grid"
+              >
+                <ul>
+                  <li>Nutrition plan</li>
+
+                  <li>Heart zones adjustments</li>
+                  <li>Tutor's feedback</li>
+
+                  <li>Sports gear selection</li>
+
+                  <li>Team's merchandise</li>
+
+                  <li>Running technique review</li>
+
+                  <li>Flexibility&mobility trainings</li>
+
+                  <li>Accsess to the lecture&seminars databse</li>
+
+                  <li>Accsess to the team's chats&channels</li>
+
+                  <li>Race plan</li>
+                </ul>
+                <ul>
+                  <li>nutrition lecture</li>
+                  <li>once in 6 months</li>
+                  <li>once a month</li>
+
+                  <li>guides</li>
+
+                  <li>once a season</li>
+
+                  <li>instruction</li>
+                </ul>
+              </div>
+              <div class="package-card__actions">
+                <a href="#popup-form" class="button button_accent popup-link"
+                  >Buy membership</a
+                >
+              </div>
+            </div>
+            <div
+              class="packages__package-card package-card full-card card full-card_light"
+            >
+              <div class="package-card__image package-card__image_green">
+                <img
+                  src="./assets/speedometer-medium-green.svg"
+                  alt="step1-photo"
+                />
+              </div>
+
+              <div
+                class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+              >
+                Standart
+              </div>
+              <div class="package-card__price-text price">
+                <div class="price__text_small strikethrough">350 sar</div>
+                <div class="price__text_big">300 sar</div>
+              </div>
+              <div class="package-card__discription-text">
+                <ul>
+                  <li>personal training plan</li>
+                  <li>offline trainings</li>
+                  <li>personal tutor</li>
+                  <li>training process analysis</li>
+                  <li>group zoom trainings</li>
+                </ul>
+              </div>
+              <div class="package-card__actions">
+                <a href="#popup-form" class="button button_accent popup-link"
+                  >Buy membership</a
+                >
+              </div>
+            </div>
+            <div
+              class="packages__package-card package-card full-card card full-card_light"
+            >
+              <div class="package-card__image package-card__image_green">
+                <img
+                  src="./assets/speedometer-big-green.svg"
+                  alt="step1-photo"
+                />
+              </div>
+
+              <div
+                class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+              >
+                VIP
+              </div>
+              <div class="package-card__price-text price">
+                <div class="price__text_small strikethrough">1100 sar</div>
+                <div class="price__text_big">1000 sar</div>
+              </div>
+              <div class="package-card__discription-text">
+                <ul>
+                  <li>personal training plan</li>
+                  <li>offline trainings</li>
+                  <li>VIP tutor</li>
+                  <li>analysis of every training</li>
+                  <li>personal zoom trainings</li>
+                  <li>team's merch</li>
+                </ul>
+              </div>
+              <div class="package-card__actions">
+                <a href="#popup-form" class="button button_accent popup-link"
+                  >Buy membership</a
+                >
               </div>
             </div>
           </div>

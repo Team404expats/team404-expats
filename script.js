@@ -35,17 +35,20 @@ window.addEventListener("resize", picDiv);
 //burger menu func
 
 (function () {
-  let burg = document.querySelector(".header__burger");
-  burg.addEventListener("click", (event) => {
-    let nav = document.querySelectorAll(".header__burger,.header__menu");
-    for (let i = 0; i < nav.length; i++) {
-      nav[i].classList.toggle("active");
-    }
-    // document.body.classList.toggle("lock");
-  });
+  let burg = document.querySelectorAll(".header__burger, .header__menu");
+
+  for (let i = 0; i < burg.length; i++) {
+    burg[i].addEventListener("click", (event) => {
+      let nav = document.querySelectorAll(".header__burger,.header__menu");
+      for (let j = 0; j < nav.length; j++) {
+        nav[j].classList.toggle("active");
+      }
+      // document.body.classList.toggle("lock");
+    });
+  }
 })();
 
-function openCity(evt, cityName) {
+function openCity(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -63,7 +66,7 @@ function openCity(evt, cityName) {
 
   // Show the current tab, and add an "active" class to the button that opened the tab
 
-  document.getElementById(cityName).style.display = "grid";
+  document.getElementById(tabName).style.display = "grid";
 
-  document.querySelector(`.tablinks_${cityName}`).classList.toggle("active");
+  document.querySelector(`.tablinks_${tabName}`).classList.toggle("active");
 }
