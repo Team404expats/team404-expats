@@ -30,6 +30,10 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Expats running club</title>
   </head>
   <body>
@@ -823,7 +827,9 @@
                     </div>
 
                     <div class="full-card__title-text">
-                      <div class="subtitle1 subtitle1_big subtitle1_light">
+                      <div
+                        class="subtitle1 subtitle1_big subtitle1_light subtitle1_line-height-small"
+                      >
                         Volodymyr Ostrykov
                       </div>
                       <div class="subtitle4 subtitle4_small subtitle4_light">
@@ -1087,7 +1093,7 @@
         <div class="popup__content popup__content-programs content-programs">
           <a class="popup__close close-popup close-icon"><span></span></a>
           <img
-            src="/assets/trace-white-1element.svg"
+            src="./assets/trace-white-1element.svg"
             alt="ornament white"
             class="content-programs__ornament"
           />
@@ -1279,32 +1285,6 @@
         <div class="popup__content popup__content-programs content-programs">
           <a class="popup__close close-popup close-icon"><span></span></a>
 
-          <!-- <div class="content-programs__actions tab">
-            <div
-              onclick="openCity(event, 'ten-k')"
-              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_ten-k"
-            >
-              My First 10k
-            </div>
-            <div
-              onclick="openCity(event, 'twenty-one-k')"
-              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_twenty-one-k"
-            >
-              My First 21k
-            </div>
-            <div
-              onclick="openCity(event, 'forty-two-k')"
-              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_forty-two-k"
-            >
-              My First 42k
-            </div>
-            <div
-              onclick="openCity(event, 'ironman')"
-              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_ironman"
-            >
-              My First IRONMAN
-            </div>
-          </div> -->
           <div
             class="content-programs__description-wrapper content-programs__description-wrapper_flex"
           >
@@ -1339,21 +1319,28 @@
                   <li>once a month</li>
 
                   <li>Sports gear selection</li>
-
+                  <li>guides</li>
                   <li>Team's merchandise</li>
+                  <li>
+                    <div class="close-icon close-icon_red"><span></span></div>
+                  </li>
 
                   <li>Running technique review</li>
-                  <li>guides</li>
-
-                  <li>Flexibility&mobility trainings</li>
                   <li>once a season</li>
 
+                  <li>Flexibility&mobility trainings</li>
+                  <li>
+                    <div class="close-icon close-icon_red"><span></span></div>
+                  </li>
+
                   <li>Accsess to the lecture&seminars databse</li>
+                  <li><div class="checkmark-icon">L</div></li>
 
                   <li>Accsess to the team's chats&channels</li>
-                  <li>instruction</li>
+                  <li><div class="checkmark-icon">L</div></li>
 
                   <li>Race plan</li>
+                  <li>instruction</li>
                 </ul>
               </div>
               <div class="package-card__actions">
@@ -1381,13 +1368,36 @@
                 <div class="price__text_small strikethrough">350 sar</div>
                 <div class="price__text_big">300 sar</div>
               </div>
-              <div class="package-card__discription-text">
+              <div
+                class="package-card__discription-text package-card__discription-text_grid"
+              >
                 <ul>
-                  <li>personal training plan</li>
-                  <li>offline trainings</li>
-                  <li>personal tutor</li>
-                  <li>training process analysis</li>
-                  <li>group zoom trainings</li>
+                  <li>Nutrition plan</li>
+                  <li>group consultation</li>
+                  <li>Heart zones adjustments</li>
+                  <li>once in 2 months</li>
+                  <li>Tutor's feedback</li>
+                  <li>once a week</li>
+
+                  <li>Sports gear selection</li>
+                  <li>seminar</li>
+                  <li>Team's merchandise</li>
+                  <li>included partly</li>
+
+                  <li>Running technique review</li>
+                  <li>once a season</li>
+
+                  <li>Flexibility&mobility trainings</li>
+                  <li>group</li>
+
+                  <li>Accsess to the lecture&seminars databse</li>
+                  <li><div class="checkmark-icon">L</div></li>
+
+                  <li>Accsess to the team's chats&channels</li>
+                  <li><div class="checkmark-icon">L</div></li>
+
+                  <li>Race plan</li>
+                  <li>seminar</li>
                 </ul>
               </div>
               <div class="package-card__actions">
@@ -1415,14 +1425,36 @@
                 <div class="price__text_small strikethrough">1100 sar</div>
                 <div class="price__text_big">1000 sar</div>
               </div>
-              <div class="package-card__discription-text">
+              <div
+                class="package-card__discription-text package-card__discription-text_grid"
+              >
                 <ul>
-                  <li>personal training plan</li>
-                  <li>offline trainings</li>
-                  <li>VIP tutor</li>
-                  <li>analysis of every training</li>
-                  <li>personal zoom trainings</li>
-                  <li>team's merch</li>
+                  <li>Nutrition plan</li>
+                  <li>personal consultation</li>
+                  <li>Heart zones adjustments</li>
+                  <li>as necessary</li>
+                  <li>Tutor's feedback</li>
+                  <li>every day</li>
+
+                  <li>Sports gear selection</li>
+                  <li>individual selection</li>
+                  <li>Team's merchandise</li>
+                  <li>included</li>
+
+                  <li>Running technique review</li>
+                  <li>once a month</li>
+
+                  <li>Flexibility&mobility trainings</li>
+                  <li>individual</li>
+
+                  <li>Accsess to the lecture&seminars databse</li>
+                  <li><div class="checkmark-icon">L</div></li>
+
+                  <li>Accsess to the team's chats&channels</li>
+                  <li><div class="checkmark-icon">L</div></li>
+
+                  <li>Race plan</li>
+                  <li>personal plan elaboration</li>
                 </ul>
               </div>
               <div class="package-card__actions">
@@ -1437,5 +1469,6 @@
     </div>
     <script src="./script.js"></script>
     <script src="./popups.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>

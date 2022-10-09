@@ -98,6 +98,37 @@ $md4: 480;
       height: 4px;
     }
   }
+
+  &_red {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 13px;
+    span {
+      background-color: red;
+      height: 2px;
+    }
+    &:before {
+      background-color: red;
+
+      height: 2px;
+    }
+    &:hover {
+      cursor: auto;
+    }
+  }
+}
+
+.checkmark-icon {
+  font-family: arial;
+  font-weight: 600;
+  color: green;
+  display: inline-block;
+  -ms-transform: scaleX(-1) rotate(-35deg); /* IE 9 */
+  -webkit-transform: scaleX(-1) rotate(-35deg); /* Chrome, Safari, Opera */
+  transform: scaleX(-1) rotate(-45deg);
 }
 
 //header
@@ -366,6 +397,10 @@ body.lock {
     &_big {
       font-size: 30px;
     }
+  }
+
+  &_line-height-small {
+    line-height: 100%;
   }
 }
 
@@ -1612,7 +1647,8 @@ body.lock {
   &_light {
     background-color: rgba(255, 255, 255, 0.9);
     color: $accentColor;
-    max-height: 600px;
+    height: 100%;
+    min-width: 360px;
   }
 
   // .full-card_white-border
@@ -1674,6 +1710,13 @@ body.lock {
 .packages {
   // .packages_title
 
+  background-image: url("../assets/trace-green-1element.svg"),
+    url("../assets/trace-green-1element.svg"),
+    url("../assets/trace-green-1element.svg");
+  // url("../assets/trace-green-1element.svg");
+  background-size: 144px;
+  background-repeat: no-repeat;
+  background-position: top -8% right 35%, right -3% top 35%, left -3% bottom 35%;
   &_title {
   }
 
@@ -1780,9 +1823,22 @@ body.lock {
     &_grid {
       ul {
         display: grid;
-        grid-template-columns: 63% 44%;
+        grid-template-columns: 3fr 2fr;
         grid-template-rows: auto;
-        gap: 3%;
+        gap: 20px;
+        column-gap: 0px;
+        width: 333px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+        & li {
+          font-size: 12px;
+        }
+        & li:nth-child(even) {
+          text-align: center;
+        }
       }
     }
     // &_grid {
@@ -2008,6 +2064,7 @@ body.lock {
 
   &__content-programs {
     gap: 25px;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
