@@ -59,6 +59,47 @@ $md4: 480;
   gap: 25px;
 }
 
+.close-icon {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  // z-index: 3;
+  &:hover {
+    cursor: pointer;
+  }
+  span {
+    position: absolute;
+    background-color: $lightColor;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    transform: rotate(-45deg);
+  }
+  &:before {
+    content: "";
+    background-color: $lightColor;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transform: rotate(45deg);
+    top: 50%;
+  }
+
+  @media (min-width: $md1+px) {
+    width: 35px;
+    height: 35px;
+    span {
+      height: 4px;
+    }
+    &:before {
+      height: 4px;
+    }
+  }
+}
+
 //header
 
 body.lock {
@@ -442,11 +483,18 @@ body.lock {
   &_light {
     background-color: $lightColor;
     color: $accentColor;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.883);
+    }
   }
 
   &_accent {
     background-color: $accentColor;
     color: $lightColor;
+    &:hover {
+      background-color: rgb(30 144 78);
+    }
   }
 
   &_accent-border {
@@ -1411,6 +1459,9 @@ body.lock {
       color: $lightColor;
       box-shadow: 0px 4px 8px 5px rgba(28, 62, 44, 0.44);
       top: 5%;
+      &:hover {
+        background-color: $accentColor;
+      }
     }
 
     &_odd {
@@ -1502,6 +1553,7 @@ body.lock {
     position: absolute;
     bottom: 30px;
     left: 30px;
+    text-align: start;
   }
 }
 
@@ -1549,6 +1601,7 @@ body.lock {
   display: flex;
   flex-direction: column;
   gap: 22px;
+  text-align: start;
   // .full-card_green
 
   &_green {
@@ -1704,6 +1757,7 @@ body.lock {
 
   &__discription-text {
     padding-top: 15px;
+    margin-left: 5px;
     flex: 1 0 auto;
     // .package-card__discription-text_list
 
@@ -1716,26 +1770,36 @@ body.lock {
         li:before {
           content: "·";
           font-size: 1em;
-
-          padding-right: 8px;
+          font-weight: 500;
+          position: absolute;
+          left: 15px;
         }
       }
     }
 
     &_grid {
-      display: grid;
-      grid-template-columns: 65% 45%;
-      grid-template-rows: auto;
-      gap: 4px;
       ul {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        li {
-          font-size: 12px;
-        }
+        display: grid;
+        grid-template-columns: 63% 44%;
+        grid-template-rows: auto;
+        gap: 3%;
       }
     }
+    // &_grid {
+    //   display: grid;
+    //   grid-template-columns: 65% 45%;
+    //   grid-template-rows: auto;
+    //   gap: 4px;
+    //   ul {
+
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 10px;
+    //     li {
+    //       font-size: 12px;
+    //     }
+    //   }
+    // }
   }
 
   &__actions {
@@ -1969,11 +2033,15 @@ body.lock {
 
   &__close {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 30px;
+    top: 15px;
     text-decoration: none;
     &:hover {
       cursor: pointer;
+    }
+    @media (min-width: $md1+px) {
+      right: 40px;
+      top: 20px;
     }
   }
 
