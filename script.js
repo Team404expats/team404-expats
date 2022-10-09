@@ -70,3 +70,16 @@ function openCity(evt, tabName) {
 
   document.querySelector(`.tablinks_${tabName}`).classList.toggle("active");
 }
+
+//initializing swiper
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  slidesPerView: 1,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+  effect: "slide",
+});

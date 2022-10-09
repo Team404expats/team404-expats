@@ -144,7 +144,11 @@
                   <div class="text-to-icon-play__text text_light">
                     see more on video
                   </div>
-                  <a type="button" class="greeting__actions_icon icon-button">
+                  <a
+                    href=""
+                    type="button"
+                    class="greeting__actions_icon icon-button"
+                  >
                     <img
                       src="./assets/video.svg"
                       width="30px"
@@ -884,7 +888,7 @@
             </div>
             <div class="packages__content packages__content_flex">
               <div
-                class="packages__package-card package-card full-card card full-card_green"
+                class="packages__package-card package-card package-card_for-section full-card card full-card_green"
               >
                 <div class="package-card__image">
                   <img
@@ -924,7 +928,7 @@
                 </div>
               </div>
               <div
-                class="packages__package-card package-card full-card card full-card_green"
+                class="packages__package-card package-card package-card_for-section full-card card full-card_green"
               >
                 <div class="package-card__image">
                   <img
@@ -965,7 +969,7 @@
                 </div>
               </div>
               <div
-                class="packages__package-card package-card full-card card full-card_green"
+                class="packages__package-card package-card package-card_for-section full-card card full-card_green"
               >
                 <div class="package-card__image">
                   <img
@@ -1061,7 +1065,10 @@
             Leave your details below and we will contact you shortly
           </div>
           <div class="popup__form form">
-            <form action="" method="post">
+            <form
+              action="https://formsubmit.co/dergelevakristina@gmail.com"
+              method="POST"
+            >
               <input
                 id="form-name"
                 type="text"
@@ -1284,191 +1291,385 @@
       <div class="popup__body">
         <div class="popup__content popup__content-programs content-programs">
           <a class="popup__close close-popup close-icon"><span></span></a>
-
-          <div
-            class="content-programs__description-wrapper content-programs__description-wrapper_flex"
-          >
-            <div
-              class="packages__package-card package-card full-card card full-card_light"
-            >
-              <div class="package-card__image package-card__image_green">
-                <img
-                  src="./assets/speedometer-small-green.svg"
-                  alt="speedometr on min "
-                />
+          <div class="packages-popup_mobile">
+            <div class="swiper">
+              <div class="nav-arrows">
+                <div class="swiper-prev">
+                  <img
+                    src="./assets/arrow-mobile.svg"
+                    alt=""
+                    class="arrow-mobile_left"
+                  />
+                </div>
+                <div class="swiper-next">
+                  <img
+                    src="./assets/arrow-mobile.svg"
+                    alt=""
+                    class="arrow-mobile_right"
+                  />
+                </div>
               </div>
-
-              <div
-                class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
-              >
-                Economy
-              </div>
-              <div class="package-card__price-text price">
-                <div class="price__text_small strikethrough">120 sar</div>
-                <div class="price__text_big">180 sar</div>
-              </div>
-              <div
-                class="package-card__discription-text package-card__discription-text_grid"
-              >
-                <ul>
-                  <li>Nutrition plan</li>
-                  <li>nutrition lecture</li>
-                  <li>Heart zones adjustments</li>
-                  <li>once in 6 months</li>
-                  <li>Tutor's feedback</li>
-                  <li>once a month</li>
-
-                  <li>Sports gear selection</li>
-                  <li>guides</li>
-                  <li>Team's merchandise</li>
-                  <li>
-                    <div class="close-icon close-icon_red"><span></span></div>
-                  </li>
-
-                  <li>Running technique review</li>
-                  <li>once a season</li>
-
-                  <li>Flexibility&mobility trainings</li>
-                  <li>
-                    <div class="close-icon close-icon_red"><span></span></div>
-                  </li>
-
-                  <li>Accsess to the lecture&seminars databse</li>
-                  <li><div class="checkmark-icon">L</div></li>
-
-                  <li>Accsess to the team's chats&channels</li>
-                  <li><div class="checkmark-icon">L</div></li>
-
-                  <li>Race plan</li>
-                  <li>instruction</li>
-                </ul>
-              </div>
-              <div class="package-card__actions">
-                <a href="#popup-form" class="button button_accent popup-link"
-                  >Buy membership</a
+              <div class="swiper-wrapper">
+                <div
+                  class="packages__package-card package-card full-card card full-card_light swiper-slide"
                 >
+                  <div class="package-card__image package-card__image_green">
+                    <img
+                      src="./assets/speedometer-small-green.svg"
+                      alt="speedometr on min "
+                    />
+                  </div>
+
+                  <div
+                    class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                  >
+                    Economy
+                  </div>
+                  <div class="package-card__price-text price">
+                    <div class="price__text_small strikethrough">120 sar</div>
+                    <div class="price__text_big">180 sar</div>
+                  </div>
+                  <div
+                    class="package-card__discription-text package-card__discription-text_grid"
+                  >
+                    <ul>
+                      <li>Nutrition plan</li>
+                      <li>nutrition lecture</li>
+                      <li>Heart zones adjustments</li>
+                      <li>once in 6 months</li>
+                      <li>Tutor's feedback</li>
+                      <li>once a month</li>
+
+                      <li>Sports gear selection</li>
+                      <li>guides</li>
+                      <li>Team's merchandise</li>
+                      <li>
+                        <div class="close-icon close-icon_red">
+                          <span></span>
+                        </div>
+                      </li>
+
+                      <li>Running technique review</li>
+                      <li>once a season</li>
+
+                      <li>Flexibility&mobility trainings</li>
+                      <li>
+                        <div class="close-icon close-icon_red">
+                          <span></span>
+                        </div>
+                      </li>
+
+                      <li>Accsess to the lecture&seminars databse</li>
+                      <li><div class="checkmark-icon">L</div></li>
+
+                      <li>Accsess to the team's chats&channels</li>
+                      <li><div class="checkmark-icon">L</div></li>
+
+                      <li>Race plan</li>
+                      <li>instruction</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="packages__package-card package-card full-card card full-card_light swiper-slide"
+                >
+                  <div class="package-card__image package-card__image_green">
+                    <img
+                      src="./assets/speedometer-medium-green.svg"
+                      alt="speedometer on middle"
+                    />
+                  </div>
+
+                  <div
+                    class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                  >
+                    Standart
+                  </div>
+                  <div class="package-card__price-text price">
+                    <div class="price__text_small strikethrough">350 sar</div>
+                    <div class="price__text_big">300 sar</div>
+                  </div>
+                  <div
+                    class="package-card__discription-text package-card__discription-text_grid"
+                  >
+                    <ul>
+                      <li>Nutrition plan</li>
+                      <li>group consultation</li>
+                      <li>Heart zones adjustments</li>
+                      <li>once in 2 months</li>
+                      <li>Tutor's feedback</li>
+                      <li>once a week</li>
+
+                      <li>Sports gear selection</li>
+                      <li>seminar</li>
+                      <li>Team's merchandise</li>
+                      <li>included partly</li>
+
+                      <li>Running technique review</li>
+                      <li>once a season</li>
+
+                      <li>Flexibility&mobility trainings</li>
+                      <li>group</li>
+
+                      <li>Accsess to the lecture&seminars databse</li>
+                      <li><div class="checkmark-icon">L</div></li>
+
+                      <li>Accsess to the team's chats&channels</li>
+                      <li><div class="checkmark-icon">L</div></li>
+
+                      <li>Race plan</li>
+                      <li>seminar</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="packages__package-card package-card full-card card full-card_light swiper-slide"
+                >
+                  <div class="package-card__image package-card__image_green">
+                    <img
+                      src="./assets/speedometer-big-green.svg"
+                      alt="speedometr on max"
+                    />
+                  </div>
+
+                  <div
+                    class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                  >
+                    VIP
+                  </div>
+                  <div class="package-card__price-text price">
+                    <div class="price__text_small strikethrough">1100 sar</div>
+                    <div class="price__text_big">1000 sar</div>
+                  </div>
+                  <div
+                    class="package-card__discription-text package-card__discription-text_grid"
+                  >
+                    <ul>
+                      <li>Nutrition plan</li>
+                      <li>personal consultation</li>
+                      <li>Heart zones adjustments</li>
+                      <li>as necessary</li>
+                      <li>Tutor's feedback</li>
+                      <li>every day</li>
+
+                      <li>Sports gear selection</li>
+                      <li>individual selection</li>
+                      <li>Team's merchandise</li>
+                      <li>included</li>
+
+                      <li>Running technique review</li>
+                      <li>once a month</li>
+
+                      <li>Flexibility&mobility trainings</li>
+                      <li>individual</li>
+
+                      <li>Accsess to the lecture&seminars databse</li>
+                      <li><div class="checkmark-icon">L</div></li>
+
+                      <li>Accsess to the team's chats&channels</li>
+                      <li><div class="checkmark-icon">L</div></li>
+
+                      <li>Race plan</li>
+                      <li>personal plan elaboration</li>
+                    </ul>
+                  </div>
+                </div>
+
+                ...
               </div>
             </div>
-            <div
-              class="packages__package-card package-card full-card card full-card_light"
-            >
-              <div class="package-card__image package-card__image_green">
-                <img
-                  src="./assets/speedometer-medium-green.svg"
-                  alt="speedometer on middle"
-                />
-              </div>
-
-              <div
-                class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+            <div class="package-card__actions">
+              <a href="#popup-form" class="button button_light popup-link"
+                >Buy membership</a
               >
-                Standart
-              </div>
-              <div class="package-card__price-text price">
-                <div class="price__text_small strikethrough">350 sar</div>
-                <div class="price__text_big">300 sar</div>
-              </div>
-              <div
-                class="package-card__discription-text package-card__discription-text_grid"
-              >
-                <ul>
-                  <li>Nutrition plan</li>
-                  <li>group consultation</li>
-                  <li>Heart zones adjustments</li>
-                  <li>once in 2 months</li>
-                  <li>Tutor's feedback</li>
-                  <li>once a week</li>
-
-                  <li>Sports gear selection</li>
-                  <li>seminar</li>
-                  <li>Team's merchandise</li>
-                  <li>included partly</li>
-
-                  <li>Running technique review</li>
-                  <li>once a season</li>
-
-                  <li>Flexibility&mobility trainings</li>
-                  <li>group</li>
-
-                  <li>Accsess to the lecture&seminars databse</li>
-                  <li><div class="checkmark-icon">L</div></li>
-
-                  <li>Accsess to the team's chats&channels</li>
-                  <li><div class="checkmark-icon">L</div></li>
-
-                  <li>Race plan</li>
-                  <li>seminar</li>
-                </ul>
-              </div>
-              <div class="package-card__actions">
-                <a href="#popup-form" class="button button_accent popup-link"
-                  >Buy membership</a
-                >
-              </div>
             </div>
+          </div>
+          <div class="packages-popup_desk">
             <div
-              class="packages__package-card package-card full-card card full-card_light"
+              class="content-programs__description-wrapper content-programs__description-wrapper_flex"
             >
-              <div class="package-card__image package-card__image_green">
-                <img
-                  src="./assets/speedometer-big-green.svg"
-                  alt="speedometr on max"
-                />
-              </div>
-
               <div
-                class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                class="packages__package-card package-card full-card card full-card_light"
               >
-                VIP
-              </div>
-              <div class="package-card__price-text price">
-                <div class="price__text_small strikethrough">1100 sar</div>
-                <div class="price__text_big">1000 sar</div>
-              </div>
-              <div
-                class="package-card__discription-text package-card__discription-text_grid"
-              >
-                <ul>
-                  <li>Nutrition plan</li>
-                  <li>personal consultation</li>
-                  <li>Heart zones adjustments</li>
-                  <li>as necessary</li>
-                  <li>Tutor's feedback</li>
-                  <li>every day</li>
+                <div class="package-card__image package-card__image_green">
+                  <img
+                    src="./assets/speedometer-small-green.svg"
+                    alt="speedometr on min "
+                  />
+                </div>
 
-                  <li>Sports gear selection</li>
-                  <li>individual selection</li>
-                  <li>Team's merchandise</li>
-                  <li>included</li>
-
-                  <li>Running technique review</li>
-                  <li>once a month</li>
-
-                  <li>Flexibility&mobility trainings</li>
-                  <li>individual</li>
-
-                  <li>Accsess to the lecture&seminars databse</li>
-                  <li><div class="checkmark-icon">L</div></li>
-
-                  <li>Accsess to the team's chats&channels</li>
-                  <li><div class="checkmark-icon">L</div></li>
-
-                  <li>Race plan</li>
-                  <li>personal plan elaboration</li>
-                </ul>
-              </div>
-              <div class="package-card__actions">
-                <a href="#popup-form" class="button button_accent popup-link"
-                  >Buy membership</a
+                <div
+                  class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
                 >
+                  Economy
+                </div>
+                <div class="package-card__price-text price">
+                  <div class="price__text_small strikethrough">120 sar</div>
+                  <div class="price__text_big">180 sar</div>
+                </div>
+                <div
+                  class="package-card__discription-text package-card__discription-text_grid"
+                >
+                  <ul>
+                    <li>Nutrition plan</li>
+                    <li>nutrition lecture</li>
+                    <li>Heart zones adjustments</li>
+                    <li>once in 6 months</li>
+                    <li>Tutor's feedback</li>
+                    <li>once a month</li>
+
+                    <li>Sports gear selection</li>
+                    <li>guides</li>
+                    <li>Team's merchandise</li>
+                    <li>
+                      <div class="close-icon close-icon_red"><span></span></div>
+                    </li>
+
+                    <li>Running technique review</li>
+                    <li>once a season</li>
+
+                    <li>Flexibility&mobility trainings</li>
+                    <li>
+                      <div class="close-icon close-icon_red"><span></span></div>
+                    </li>
+
+                    <li>Accsess to the lecture&seminars databse</li>
+                    <li><div class="checkmark-icon">L</div></li>
+
+                    <li>Accsess to the team's chats&channels</li>
+                    <li><div class="checkmark-icon">L</div></li>
+
+                    <li>Race plan</li>
+                    <li>instruction</li>
+                  </ul>
+                </div>
+                <div class="package-card__actions">
+                  <a href="#popup-form" class="button button_accent popup-link"
+                    >Buy membership</a
+                  >
+                </div>
+              </div>
+              <div
+                class="packages__package-card package-card full-card card full-card_light"
+              >
+                <div class="package-card__image package-card__image_green">
+                  <img
+                    src="./assets/speedometer-medium-green.svg"
+                    alt="speedometer on middle"
+                  />
+                </div>
+
+                <div
+                  class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                >
+                  Standart
+                </div>
+                <div class="package-card__price-text price">
+                  <div class="price__text_small strikethrough">350 sar</div>
+                  <div class="price__text_big">300 sar</div>
+                </div>
+                <div
+                  class="package-card__discription-text package-card__discription-text_grid"
+                >
+                  <ul>
+                    <li>Nutrition plan</li>
+                    <li>group consultation</li>
+                    <li>Heart zones adjustments</li>
+                    <li>once in 2 months</li>
+                    <li>Tutor's feedback</li>
+                    <li>once a week</li>
+
+                    <li>Sports gear selection</li>
+                    <li>seminar</li>
+                    <li>Team's merchandise</li>
+                    <li>included partly</li>
+
+                    <li>Running technique review</li>
+                    <li>once a season</li>
+
+                    <li>Flexibility&mobility trainings</li>
+                    <li>group</li>
+
+                    <li>Accsess to the lecture&seminars databse</li>
+                    <li><div class="checkmark-icon">L</div></li>
+
+                    <li>Accsess to the team's chats&channels</li>
+                    <li><div class="checkmark-icon">L</div></li>
+
+                    <li>Race plan</li>
+                    <li>seminar</li>
+                  </ul>
+                </div>
+                <div class="package-card__actions">
+                  <a href="#popup-form" class="button button_accent popup-link"
+                    >Buy membership</a
+                  >
+                </div>
+              </div>
+              <div
+                class="packages__package-card package-card full-card card full-card_light"
+              >
+                <div class="package-card__image package-card__image_green">
+                  <img
+                    src="./assets/speedometer-big-green.svg"
+                    alt="speedometr on max"
+                  />
+                </div>
+
+                <div
+                  class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                >
+                  VIP
+                </div>
+                <div class="package-card__price-text price">
+                  <div class="price__text_small strikethrough">1100 sar</div>
+                  <div class="price__text_big">1000 sar</div>
+                </div>
+                <div
+                  class="package-card__discription-text package-card__discription-text_grid"
+                >
+                  <ul>
+                    <li>Nutrition plan</li>
+                    <li>personal consultation</li>
+                    <li>Heart zones adjustments</li>
+                    <li>as necessary</li>
+                    <li>Tutor's feedback</li>
+                    <li>every day</li>
+
+                    <li>Sports gear selection</li>
+                    <li>individual selection</li>
+                    <li>Team's merchandise</li>
+                    <li>included</li>
+
+                    <li>Running technique review</li>
+                    <li>once a month</li>
+
+                    <li>Flexibility&mobility trainings</li>
+                    <li>individual</li>
+
+                    <li>Accsess to the lecture&seminars databse</li>
+                    <li><div class="checkmark-icon">L</div></li>
+
+                    <li>Accsess to the team's chats&channels</li>
+                    <li><div class="checkmark-icon">L</div></li>
+
+                    <li>Race plan</li>
+                    <li>personal plan elaboration</li>
+                  </ul>
+                </div>
+                <div class="package-card__actions">
+                  <a href="#popup-form" class="button button_accent popup-link"
+                    >Buy membership</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
     <script src="./popups.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
