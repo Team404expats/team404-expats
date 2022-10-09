@@ -1818,7 +1818,9 @@ body.lock {
         display: flex;
         flex-direction: column;
         gap: 20px;
-
+        @media (min-width: $md1+px) {
+          gap: 30px;
+        }
         li:before {
           content: "·";
           font-size: 1em;

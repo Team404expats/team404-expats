@@ -1616,6 +1616,11 @@ body.lock {
   flex-direction: column;
   gap: 20px;
 }
+@media (min-width: 1180px) {
+  .package-card__discription-text_list ul {
+    gap: 30px;
+  }
+}
 .package-card__discription-text_list ul li:before {
   content: "·";
   font-size: 1em;
