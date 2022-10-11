@@ -2550,3 +2550,16 @@ svg {
 .tap-2 {
   animation-delay: 0.2s;
 }
+
+//input autocomplete backround fix
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  background-color: $accentColor;
+  color: rgba(255, 255, 255, 0.782);
+  border: 1px solid #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
