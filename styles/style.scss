@@ -2456,9 +2456,8 @@ div.swiper {
 //animation block
 
 svg {
+  width: 20px;
   display: inline-block;
-  width: 70px;
-  margin: 3% auto;
 }
 
 /* SVG RULES */
@@ -2492,14 +2491,10 @@ svg {
 
 .tap-icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotate(40deg);
-  z-index: 10;
+  top: 8%;
+  right: 15%;
 
-  &_bottom {
-    top: 60%;
-  }
+  z-index: 10;
 }
 
 @keyframes tap-double {

@@ -2114,9 +2114,8 @@ div.swiper {
 }
 
 svg {
+  width: 20px;
   display: inline-block;
-  width: 70px;
-  margin: 3% auto;
 }
 
 /* SVG RULES */
@@ -2148,13 +2147,9 @@ svg {
 /* ANIMATION KEYFRAMES */
 .tap-icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotate(40deg);
+  top: 8%;
+  right: 15%;
   z-index: 10;
-}
-.tap-icon_bottom {
-  top: 60%;
 }
 
 @-webkit-keyframes tap-double {
