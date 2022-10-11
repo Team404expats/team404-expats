@@ -142,6 +142,10 @@ $md4: 480;
   transform: scaleX(-1) rotate(-45deg);
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 //header
 
 body.lock {
