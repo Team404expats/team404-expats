@@ -83,3 +83,8 @@ const swiper = new Swiper(".swiper", {
   },
   effect: "slide",
 });
+
+//phone mask library
+
+const cssPhone = 'input[name="phone"';
+new phoneMask().init(cssPhone);

@@ -1908,18 +1908,21 @@ body.lock {
   height: 32px;
   padding: 15px 10px;
   background-color: transparent;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.782);
   border: 1px solid #ffffff;
   border-radius: 8px;
 }
 .form__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.562);
+  color: rgba(255, 255, 255, 0.782);
 }
 .form__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.562);
+  color: rgba(255, 255, 255, 0.782);
 }
 .form__input::placeholder {
-  color: rgba(255, 255, 255, 0.562);
+  color: rgba(255, 255, 255, 0.782);
+}
+.form__input:focus {
+  color: #fff;
 }
 .form__button {
   display: flex;

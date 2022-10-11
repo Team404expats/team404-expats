@@ -1111,14 +1111,18 @@
                 class="form__input"
                 required
               />
+
               <input
-                id="form-number"
-                type="text"
-                name="number"
-                placeholder="Number"
+                type="tel"
+                id="phone"
+                name="phone"
+                value="+ (___) ___ - ____"
+                mask="+ (___) ___ - ____"
+                placeholder="+ (___) ___ - ____"
                 class="form__input"
                 required
               />
+
               <input
                 type="submit"
                 class="button button_light form__button"
@@ -1703,6 +1707,9 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./phonemask.min.js"></script>
+    <script src="./phonemask.js"></script>
+
     <script src="./script.js"></script>
     <script src="./popups.js"></script>
   </body>
