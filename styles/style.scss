@@ -1264,6 +1264,7 @@ body.lock {
   // .program-types__content-blocks
 
   &__content-blocks {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -2447,4 +2448,101 @@ div.swiper {
       display: block;
     }
   }
+}
+
+//animation block
+
+svg {
+  display: inline-block;
+  width: 70px;
+  margin: 3% auto;
+}
+
+/* SVG RULES */
+
+.hand-double {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tap-1,
+.tap-2 {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tap-1 {
+  opacity: 0.5;
+}
+
+.tap-2 {
+  opacity: 0.25;
+}
+
+/* ANIMATION KEYFRAMES */
+
+.tap-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(40deg);
+  z-index: 10;
+
+  &_bottom {
+    top: 60%;
+  }
+}
+
+@keyframes tap-double {
+  0% {
+    transform: rotateX(0deg);
+  }
+  10% {
+    transform: rotateX(12.5deg);
+  }
+  25% {
+    transform: rotateX(25deg);
+  }
+  35% {
+    transform: rotateX(10deg);
+  }
+  50% {
+    transform: rotateX(25deg);
+  }
+}
+
+@keyframes tap-circle {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(1.05);
+    opacity: 0.6;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+.hand-double {
+  animation: tap-double 1.25s ease-out backwards;
+  animation-iteration-count: infinite;
+}
+
+.tap-1,
+.tap-2 {
+  animation: tap-circle 1.25s ease-out backwards;
+  animation-iteration-count: infinite;
+}
+
+.tap-2 {
+  animation-delay: 0.2s;
 }
