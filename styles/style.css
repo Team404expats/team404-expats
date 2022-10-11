@@ -203,6 +203,16 @@ h6 {
 .close-icon_red:hover {
   cursor: auto;
 }
+.close-icon_small {
+  width: 20px;
+  height: 20px;
+}
+.close-icon_small span {
+  height: 2px;
+}
+.close-icon_small:before {
+  height: 2px;
+}
 
 .checkmark-icon {
   font-family: arial;
@@ -1857,6 +1867,10 @@ body.lock {
     right: 40px;
     top: 20px;
   }
+}
+.popup__close_small {
+  right: 10px;
+  top: 10px;
 }
 .popup__title {
   text-align: center;

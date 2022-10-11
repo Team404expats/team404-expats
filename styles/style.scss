@@ -119,6 +119,17 @@ $md4: 480;
       cursor: auto;
     }
   }
+
+  &_small {
+    width: 20px;
+    height: 20px;
+    span {
+      height: 2px;
+    }
+    &:before {
+      height: 2px;
+    }
+  }
 }
 
 .checkmark-icon {
@@ -2124,6 +2135,11 @@ body.lock {
     @media (min-width: $md1+px) {
       right: 40px;
       top: 20px;
+    }
+
+    &_small {
+      right: 10px;
+      top: 10px;
     }
   }
 
