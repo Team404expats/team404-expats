@@ -2396,6 +2396,8 @@ body.lock {
 
 div.swiper {
   width: 320px;
+  background-color: $lightColor;
+  border-radius: 17px;
   position: static;
   @media (min-width: $md2+px) {
     width: 360px;
