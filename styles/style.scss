@@ -2067,16 +2067,17 @@ body.lock {
 
   &__body {
     width: 100%;
-
+    min-height: 100%; /* Fallback for browsers that do not support Custom Properties */
+    // height: calc(var(--vh, 1vh) * 85);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    transition: all 0.8s ease 0s;
+    // top: 50%;
+    // right: 50%;
+    // transform: translate(50%, -50%);
+    // transition: all 0.8s ease 0s;
   }
 
   // .popup__content
@@ -2108,8 +2109,8 @@ body.lock {
     width: 100vw;
     max-width: 1440px;
 
-    min-height: min(85vh, 750px);
-    max-height: 1000px;
+    // min-height: min(85%, 750px);
+    // max-height: 1000px;
     background-color: $accentColor;
     color: $lightColor;
     padding: 70px 20px 20px 20px;

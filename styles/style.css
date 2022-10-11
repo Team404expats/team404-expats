@@ -1808,15 +1808,12 @@ body.lock {
 }
 .popup__body {
   width: 100%;
+  min-height: 100%; /* Fallback for browsers that do not support Custom Properties */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  transition: all 0.8s ease 0s;
 }
 .popup__content-form {
   gap: 25px;
@@ -1843,8 +1840,6 @@ body.lock {
   align-items: center;
   width: 100vw;
   max-width: 1440px;
-  min-height: min(85vh, 750px);
-  max-height: 1000px;
   background-color: #19713e;
   color: #fff;
   padding: 70px 20px 20px 20px;
