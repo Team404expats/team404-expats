@@ -712,6 +712,11 @@ body.lock {
   min-height: 500px;
   max-height: 800px;
 }
+@media (min-width: 1180px) {
+  .greeting {
+    min-height: 600px;
+  }
+}
 .greeting__title {
   position: relative;
 }
