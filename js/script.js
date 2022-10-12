@@ -86,5 +86,13 @@ const swiper = new Swiper(".swiper", {
 
 //phone mask library
 
-const cssPhone = 'input[name="phone"';
-new phoneMask().init(cssPhone);
+const inputPhone = document.querySelector("#phone");
+
+inputPhone.addEventListener("focus", onInputClick);
+
+function onInputClick() {
+  inputPhone.setAttribute("value", "+____________________");
+  inputPhone.setAttribute("mask", "+_____________________");
+  const cssPhone = 'input[name="phone"';
+  new phoneMask().init(cssPhone);
+}
