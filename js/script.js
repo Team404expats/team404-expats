@@ -88,13 +88,34 @@ const swiper = new Swiper(".swiper", {
 
 const inputPhone = document.querySelector("#phone");
 
-inputPhone.addEventListener("focus", onInputClick);
+inputPhone.addEventListener("click", onInputClick);
 
 function onInputClick() {
   if (!inputPhone.hasAttribute("mask")) {
-    inputPhone.setAttribute("value", "+____________________");
-    inputPhone.setAttribute("mask", "+_____________________");
+    inputPhone.setAttribute("value", "+ (___) ___ - _________");
+    inputPhone.setAttribute("mask", "+ (___) ___ - _________");
     const cssPhone = 'input[name="phone"';
     new phoneMask().init(cssPhone);
   }
+
+  let currentValue = inputPhone.value;
+  let temp = currentValue.split("");
+  let ind = getLastDigitIndex(temp);
+  inputPhone.setSelectionRange(ind + 1, ind + 1);
+  inputPhone.focus();
+}
+
+function getLastDigitIndex(arr) {
+  let machedI = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].search(/\d/) !== -1) {
+      machedI.push(i);
+    }
+  }
+
+  if (machedI.length === 0) {
+    return 2;
+  }
+  return machedI[machedI.length - 1];
 }
