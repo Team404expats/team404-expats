@@ -2279,8 +2279,6 @@ body.lock {
 
   // .content-programs__description
 
-  &__description {
-  }
   &__description-wrapper {
     max-width: 340px;
     width: 100%;
@@ -2420,15 +2418,8 @@ div.swiper {
   right: 50%;
   transform: translateX(50%);
 }
-.swiper-button-prev {
-}
 
 .arrow-mobile {
-  // .arrow-mobile_left
-
-  &_left {
-  }
-
   // .arrow-mobile_right
 
   &_right {
@@ -2440,9 +2431,6 @@ div.swiper {
   & img {
     opacity: 0.5;
   }
-}
-
-.swiper-button-next {
 }
 
 .packages-popup {
@@ -2471,89 +2459,12 @@ svg {
   display: inline-block;
 }
 
-/* SVG RULES */
-
-.hand-double {
-  fill: #fff;
-  stroke: #000;
-  stroke-width: 3px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.tap-1,
-.tap-2 {
-  fill: transparent;
-  stroke: #fff;
-  stroke-width: 3px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.tap-1 {
-  opacity: 0.5;
-}
-
-.tap-2 {
-  opacity: 0.25;
-}
-
-/* ANIMATION KEYFRAMES */
-
 .tap-icon {
   position: absolute;
   top: 8%;
   right: 15%;
 
   z-index: 10;
-}
-
-@keyframes tap-double {
-  0% {
-    transform: rotateX(0deg);
-  }
-  10% {
-    transform: rotateX(12.5deg);
-  }
-  25% {
-    transform: rotateX(25deg);
-  }
-  35% {
-    transform: rotateX(10deg);
-  }
-  50% {
-    transform: rotateX(25deg);
-  }
-}
-
-@keyframes tap-circle {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  75% {
-    transform: scale(1.05);
-    opacity: 0.6;
-  }
-  80% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-}
-
-.hand-double {
-  animation: tap-double 1.25s ease-out backwards;
-  animation-iteration-count: infinite;
-}
-
-.tap-1,
-.tap-2 {
-  animation: tap-circle 1.25s ease-out backwards;
-  animation-iteration-count: infinite;
-}
-
-.tap-2 {
-  animation-delay: 0.2s;
 }
 
 //input autocomplete backround fix
