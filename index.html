@@ -1,106 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <meta
+      name="description"
+      content="First Running team that brought together
+    expatriates in KSA through active lifestyle"
+    />
+    <meta
+      name="google-site-verification"
+      content="rKhIj30Qpq-y00cxJNWoVO_JHBxaAlCjFs1VmReE6zI"
+    />
+    <title>Running community of expats "team404expats"</title>
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0TTDVCZTQK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="shortcut icon" href="./assets/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
-  <link rel="manifest" href="./assets/site.webmanifest" />
-  <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#5bbad5" />
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <meta name="description" content="First Running team that brought together
-    expatriates in KSA through active lifestyle">
-    <meta name="google-site-verification" content="rKhIj30Qpq-y00cxJNWoVO_JHBxaAlCjFs1VmReE6zI" />
-  <title>Running community of expats "team404expats"</title>
-</head>
+      gtag("config", "G-0TTDVCZTQK");
+    </script>
+  </head>
 
-<body>
-  <div class="wrapper">
-    <header id="header" class="header lock-padding">
-      <div class="header__body">
-        <div class="header__logo-wrapper">
-          <a href="#" class="header__logo">
-            <img src="./assets/logo.svg" alt="logo team404-expats" />
-          </a>
-          <div class="header__logo-text">
-            Running club <br />
-            in Riyadh
-          </div>
-        </div>
-        <div class="header__actions">
-          <a href="#popup-form" type="button" class="button button_accent popup-link header__cta">
-            Join <span class="button__span"> &nbspthe&nbsp</span> club
-          </a>
-          <div class="header__burger">
-            <span></span>
-          </div>
-        </div>
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li>
-              <a href="#achievments" class="header__link">Achievments</a>
-            </li>
-            <li>
-              <a href="#packages" class="header__link">Packages</a>
-            </li>
-            <li>
-              <a href="#how-it-works" class="header__link">How does it work</a>
-            </li>
-            <li>
-              <a href="#team" class="header__link">Team</a>
-            </li>
-          </ul>
-          <div class="header__contacts contacts">
-            <div class="social-icons contacts_social-icons">
-              <a href="https://www.facebook.com/profile.php?id=100083286185141" class="social-icon-button"
-                target="_blank">
-                <img src="./assets/facebook-green-icon.svg" alt="facebook-icon" />
-              </a>
-              <a href="https://instagram.com/team404.expats?igshid=YmMyMTA2M2Y=" class="social-icon-button"
-                target="_blank"><img src="./assets/instagram-green.svg" alt="instagram icon" />
-              </a>
-            </div>
-            <div class="contacts_email contacts_accent">
-              team404@gmail.com
+  <body>
+    <div class="wrapper">
+      <header id="header" class="header lock-padding">
+        <div class="header__body">
+          <div class="header__logo-wrapper">
+            <a href="#" class="header__logo">
+              <img src="./assets/logo.svg" alt="logo team404-expats" />
+            </a>
+            <div class="header__logo-text">
+              Running club <br />
+              in Riyadh
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    <main class="content">
-      <section id="greet" class="section greeting section_green">
-        <div class="_container">
-          <div class="greeting__bg ibg">
-            <img src="./assets/background-with-man.jpg" alt="Running Club in Riyadh" class="greeting__background" />
+          <div class="header__actions">
+            <a
+              href="#popup-form"
+              type="button"
+              class="button button_accent popup-link header__cta"
+            >
+              Join <span class="button__span"> &nbspthe&nbsp</span> club
+            </a>
+            <div class="header__burger">
+              <span></span>
+            </div>
           </div>
-          <div class="greeting__content-wrapper">
-            <div class="greeting__text-wrapper">
-              <div class="greeting__title title title_light">
-                Expats <br />running club
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li>
+                <a href="#achievments" class="header__link">Achievments</a>
+              </li>
+              <li>
+                <a href="#packages" class="header__link">Packages</a>
+              </li>
+              <li>
+                <a href="#how-it-works" class="header__link"
+                  >How does it work</a
+                >
+              </li>
+              <li>
+                <a href="#team" class="header__link">Team</a>
+              </li>
+            </ul>
+            <div class="header__contacts contacts">
+              <div class="social-icons contacts_social-icons">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100083286185141"
+                  class="social-icon-button"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/facebook-green-icon.svg"
+                    alt="facebook-icon"
+                  />
+                </a>
+                <a
+                  href="https://instagram.com/team404.expats?igshid=YmMyMTA2M2Y="
+                  class="social-icon-button"
+                  target="_blank"
+                  ><img
+                    src="./assets/instagram-green.svg"
+                    alt="instagram icon"
+                  />
+                </a>
               </div>
-
-              <div class="greeting__subtitle subtitle2 subtitle2_smaller subtitle2_dark">
-                First in Saudi Arabia
+              <div class="contacts_email contacts_accent">
+                team404@gmail.com
               </div>
-              <p class="greeting__text text text_light text_with-line">
-                Chasing dreams, adventure, and performance through community
-                and support, is a family of like-minded athletes supporting
-                and lifting each other.
-              </p>
             </div>
-            <div class="greeting__actions">
-              <a href="#popup-form" type="button" class="button button_light popup-link">
-                Join <span class="button__span"> &nbspthe&nbsp</span>club
-              </a>
-              <!-- YOUTUBE BUTTON -->
-              <!-- <div class="text-to-icon-play">
+          </nav>
+        </div>
+      </header>
+      <main class="content">
+        <section id="greet" class="section greeting section_green">
+          <div class="_container">
+            <div class="greeting__bg ibg">
+              <img
+                src="./assets/background-with-man.jpg"
+                alt="Running Club in Riyadh"
+                class="greeting__background"
+              />
+            </div>
+            <div class="greeting__content-wrapper">
+              <div class="greeting__text-wrapper">
+                <div class="greeting__title title title_light">
+                  Expats <br />running club
+                </div>
+
+                <div
+                  class="greeting__subtitle subtitle2 subtitle2_smaller subtitle2_dark"
+                >
+                  First in Saudi Arabia
+                </div>
+                <p class="greeting__text text text_light text_with-line">
+                  Chasing dreams, adventure, and performance through community
+                  and support, is a family of like-minded athletes supporting
+                  and lifting each other.
+                </p>
+              </div>
+              <div class="greeting__actions">
+                <a
+                  href="#popup-form"
+                  type="button"
+                  class="button button_light popup-link"
+                >
+                  Join <span class="button__span"> &nbspthe&nbsp</span>club
+                </a>
+                <!-- YOUTUBE BUTTON -->
+                <!-- <div class="text-to-icon-play">
                 <div class="text-to-icon-play__text text_light">
                   see more on video
                 </div>
@@ -108,206 +179,272 @@
                   <img src="./assets/video.svg" width="30px" height="30px" alt="play video" />
                 </a>
               </div> -->
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="achievments" class="section achievments section_green section_trace">
-        <div class="_container _flex-col">
-          <div class="achievments_head-wrapper">
-            <div class="achievments__head">
-              <div class="achievments__title subtitle2 subtitle2_light">
-                What we done so far
-              </div>
-            </div>
-            <div class="achievments__text text text_light text_with-line">
-              we live our mission of striving for <br />
-              performance, seeking new adventures, and supporting community.
-            </div>
-          </div>
-          <div class="achievments__content">
-            <div
-              class="picture-with-result achievments__content_pic-big rbg square picture-with-result_light-gradient-layer">
-              <img src="./assets/photo-running-team.jpg" alt="Preparing for 10 km race" />
-              <div class="picture-with-result__result-info result-info">
-                <div class="result-info__number result-info__number_first numbers numbers_light">
-                  280
-                </div>
-                <div class="result-info__text result-info__text_first subtitle3 subtitle3_light">
-                  finishers of 10km
+        </section>
+        <section
+          id="achievments"
+          class="section achievments section_green section_trace"
+        >
+          <div class="_container _flex-col">
+            <div class="achievments_head-wrapper">
+              <div class="achievments__head">
+                <div class="achievments__title subtitle2 subtitle2_light">
+                  What we done so far
                 </div>
               </div>
-            </div>
-            <div class="picture-with-result rbg square picture-with-result_dark-gradient-layer">
-              <img src="./assets/photo-running-man-portrait.jpg" alt="Preparing for half marathon" />
-              <div class="picture-with-result__result-info result-info">
-                <div class="result-info__number numbers numbers_light">
-                  120
-                </div>
-                <div class="result-info__text subtitle3 subtitle3_smaller subtitle3_light">
-                  finishers of half-maraton (21.1 km)
-                </div>
+              <div class="achievments__text text text_light text_with-line">
+                we live our mission of striving for <br />
+                performance, seeking new adventures, and supporting community.
               </div>
             </div>
-            <div class="picture-with-result rbg square picture-with-result_dark-gradient-layer">
-              <img src="./assets/photo-man-shows-heart.jpg" alt="Marathon preparation" />
-              <div class="picture-with-result__result-info result-info">
-                <div class="result-info__number numbers numbers_light">
-                  85
-                </div>
-                <div class="result-info__text subtitle3 subtitle3_smaller subtitle3_light">
-                  finishers of maraton (42.2 km)
+            <div class="achievments__content">
+              <div
+                class="picture-with-result achievments__content_pic-big rbg square picture-with-result_light-gradient-layer"
+              >
+                <img
+                  src="./assets/photo-running-team.jpg"
+                  alt="Preparing for 10 km race"
+                />
+                <div class="picture-with-result__result-info result-info">
+                  <div
+                    class="result-info__number result-info__number_first numbers numbers_light"
+                  >
+                    280
+                  </div>
+                  <div
+                    class="result-info__text result-info__text_first subtitle3 subtitle3_light"
+                  >
+                    finishers of 10km
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="picture-with-result rbg square picture-with-result_dark-gradient-layer">
-              <img src="./assets/photo-team-on-finish.jpg"
-                alt="Preparing amateurs for triathlon from ZERO (any skill level)" />
-              <div class="picture-with-result__result-info result-info">
-                <div class="result-info__number numbers numbers_light">
-                  51
-                </div>
-                <div class="result-info__text subtitle3 subtitle3_smaller subtitle3_light">
-                  finishers of Ironman
+              <div
+                class="picture-with-result rbg square picture-with-result_dark-gradient-layer"
+              >
+                <img
+                  src="./assets/photo-running-man-portrait.jpg"
+                  alt="Preparing for half marathon"
+                />
+                <div class="picture-with-result__result-info result-info">
+                  <div class="result-info__number numbers numbers_light">
+                    120
+                  </div>
+                  <div
+                    class="result-info__text subtitle3 subtitle3_smaller subtitle3_light"
+                  >
+                    finishers of half-maraton (21.1 km)
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="picture-with-result achievments__content_pic-wide rbg rectangle picture-with-result_rectangle-gradient-layer">
-              <img src="./assets/photo-running-man-waves.jpg" alt="Marathon team records" />
-              <div class="picture-with-result__records records">
-                <div class="records__title records__title_light">
-                  Our <br />reсords
+              <div
+                class="picture-with-result rbg square picture-with-result_dark-gradient-layer"
+              >
+                <img
+                  src="./assets/photo-man-shows-heart.jpg"
+                  alt="Marathon preparation"
+                />
+                <div class="picture-with-result__result-info result-info">
+                  <div class="result-info__number numbers numbers_light">
+                    85
+                  </div>
+                  <div
+                    class="result-info__text subtitle3 subtitle3_smaller subtitle3_light"
+                  >
+                    finishers of maraton (42.2 km)
+                  </div>
                 </div>
-                <div class="records__numbers grid records__numbers_light">
-                  <span></span>
-                  <div class="records__numbers-wrapper">
-                    <div class="records__numbers_color-title subtitle3 subtitle3 grid_center">
-                      21,1 km
+              </div>
+              <div
+                class="picture-with-result rbg square picture-with-result_dark-gradient-layer"
+              >
+                <img
+                  src="./assets/photo-team-on-finish.jpg"
+                  alt="Preparing amateurs for triathlon from ZERO (any skill level)"
+                />
+                <div class="picture-with-result__result-info result-info">
+                  <div class="result-info__number numbers numbers_light">
+                    51
+                  </div>
+                  <div
+                    class="result-info__text subtitle3 subtitle3_smaller subtitle3_light"
+                  >
+                    finishers of Ironman
+                  </div>
+                </div>
+              </div>
+              <div
+                class="picture-with-result achievments__content_pic-wide rbg rectangle picture-with-result_rectangle-gradient-layer"
+              >
+                <img
+                  src="./assets/photo-running-man-waves.jpg"
+                  alt="Marathon team records"
+                />
+                <div class="picture-with-result__records records">
+                  <div class="records__title records__title_light">
+                    Our <br />reсords
+                  </div>
+                  <div class="records__numbers grid records__numbers_light">
+                    <span></span>
+                    <div class="records__numbers-wrapper">
+                      <div
+                        class="records__numbers_color-title subtitle3 subtitle3 grid_center"
+                      >
+                        21,1 km
+                      </div>
+                    </div>
+                    <div class="records__numbers-wrapper">
+                      <div
+                        class="records__numbers_color-title subtitle3 grid_center"
+                      >
+                        42.2 km
+                      </div>
+                    </div>
+                    <div class="records__numbers_row-title">male</div>
+                    <div class="records__numbers_number subtitle3 grid_center">
+                      1:14
+                    </div>
+                    <div class="records__numbers_number subtitle3 grid_center">
+                      2:48
+                    </div>
+                    <div class="records__numbers_row-title">female</div>
+                    <div class="records__numbers_number subtitle3 grid_center">
+                      1:37
+                    </div>
+                    <div class="records__numbers_number subtitle3 grid_center">
+                      3:25
                     </div>
                   </div>
-                  <div class="records__numbers-wrapper">
-                    <div class="records__numbers_color-title subtitle3 grid_center">
-                      42.2 km
-                    </div>
-                  </div>
-                  <div class="records__numbers_row-title">male</div>
-                  <div class="records__numbers_number subtitle3 grid_center">
-                    1:14
-                  </div>
-                  <div class="records__numbers_number subtitle3 grid_center">
-                    2:48
-                  </div>
-                  <div class="records__numbers_row-title">female</div>
-                  <div class="records__numbers_number subtitle3 grid_center">
-                    1:37
-                  </div>
-                  <div class="records__numbers_number subtitle3 grid_center">
-                    3:25
-                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <section class="section how-we-did-1">
-          <div class="_container how-we-did-1__wrapper">
-            <div class="icons-block _flex-col">
-              <div class="bg _gradient-bg-transparent">
-                <img src="./assets/photo-man-with-flag.jpg" alt="finish of the Marathon" />
+        </section>
+        <section>
+          <section class="section how-we-did-1">
+            <div class="_container how-we-did-1__wrapper">
+              <div class="icons-block _flex-col">
+                <div class="bg _gradient-bg-transparent">
+                  <img
+                    src="./assets/photo-man-with-flag.jpg"
+                    alt="finish of the Marathon"
+                  />
+                </div>
+                <div class="icons-block__title subtitle2 subtitle2_light">
+                  How we did it?
+                </div>
+                <div class="icons-block__icons">
+                  <div class="icons-block__icon">
+                    <img src="./assets/image 9.jpg" alt="icon plan" />
+                    <div class="text_small text_dark">
+                      Personal training plans
+                    </div>
+                  </div>
+                  <div class="icons-block__icon">
+                    <img src="./assets/image 10.jpg" alt="icon clock" />
+                    <div class="text_small text_dark">
+                      Trainings integrate and adapt to your lifestyle
+                    </div>
+                  </div>
+                  <div class="icons-block__icon">
+                    <img src="./assets/image 10-1.jpg" alt="icon hands" />
+                    <div class="text_small text_dark">24/7 coach support</div>
+                  </div>
+                  <div class="icons-block__icon">
+                    <img src="./assets/image 9-1.jpg" alt="icon team" />
+                    <div class="text_small text_dark">Team events</div>
+                  </div>
+                  <div class="icons-block__icon">
+                    <img
+                      src="./assets/image 9-2.jpg"
+                      alt="icon international community"
+                    />
+                    <div class="text_small text_dark">
+                      International community
+                    </div>
+                  </div>
+                  <div class="icons-block__icon">
+                    <img src="./assets/image 10-2.jpg" alt="icon plane" />
+                    <div class="text_small text_dark">
+                      Training camps all over the worlds
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="icons-block__title subtitle2 subtitle2_light">
-                How we did it?
-              </div>
-              <div class="icons-block__icons">
-                <div class="icons-block__icon">
-                  <img src="./assets/image 9.jpg" alt="icon plan" />
-                  <div class="text_small text_dark">
-                    Personal training plans
-                  </div>
-                </div>
-                <div class="icons-block__icon">
-                  <img src="./assets/image 10.jpg" alt="icon clock" />
-                  <div class="text_small text_dark">
-                    Trainings integrate and adapt to your lifestyle
-                  </div>
-                </div>
-                <div class="icons-block__icon">
-                  <img src="./assets/image 10-1.jpg" alt="icon hands" />
-                  <div class="text_small text_dark">24/7 coach support</div>
-                </div>
-                <div class="icons-block__icon">
-                  <img src="./assets/image 9-1.jpg" alt="icon team" />
-                  <div class="text_small text_dark">Team events</div>
-                </div>
-                <div class="icons-block__icon">
-                  <img src="./assets/image 9-2.jpg" alt="icon international community" />
-                  <div class="text_small text_dark">
-                    International community
-                  </div>
-                </div>
-                <div class="icons-block__icon">
-                  <img src="./assets/image 10-2.jpg" alt="icon plane" />
-                  <div class="text_small text_dark">
-                    Training camps all over the worlds
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="how-we-did-2__text-block how-we-did-2_big-screen-visible">
-              <div class="how-we-did-2__text subtitle4 subtitle_dark">
+              <div
+                class="how-we-did-2__text-block how-we-did-2_big-screen-visible"
+              >
+                <div class="how-we-did-2__text subtitle4 subtitle_dark">
+                  Team 404expats represents one of the most structured athletic
+                  communities in the world, resulting in clear communication
+                  from top to bottom (and vice versa) of values, partnerships,
+                  team direction, and feedback.
+                  <br />
+                  <br />
+                  The end result: a family that understands what is happening,
+                  when it’s happening, and where it is headed together.
+                </div>
+                <img
+                  src="./assets/trace-3elements.svg"
+                  alt="green ornament from 3 parts"
+                  class="how-we-did-2__text-block_ornament"
+                />
+              </div>
+            </div>
+          </section>
+          <section
+            class="section how-we-did-2 how-we-did-2_big-screen-invisible"
+          >
+            <div class="how-we-did-2__text-block _container">
+              <div class="how-we-did-2__text subtitle4 subtitle4_dark">
                 Team 404expats represents one of the most structured athletic
-                communities in the world, resulting in clear communication
-                from top to bottom (and vice versa) of values, partnerships,
-                team direction, and feedback.
+                communities in the world, resulting in clear communication from
+                top to bottom (and vice versa) of values, partnerships, team
+                direction, and feedback.
                 <br />
                 <br />
                 The end result: a family that understands what is happening,
                 when it’s happening, and where it is headed together.
               </div>
-              <img src="./assets/trace-3elements.svg" alt="green ornament from 3 parts"
-                class="how-we-did-2__text-block_ornament" />
+              <img
+                src="./assets/trace-3elements.svg"
+                alt="green ornament from 3 parts"
+                class="how-we-did-2__text-block_ornament"
+              />
             </div>
-          </div>
+          </section>
         </section>
-        <section class="section how-we-did-2 how-we-did-2_big-screen-invisible">
-          <div class="how-we-did-2__text-block _container">
-            <div class="how-we-did-2__text subtitle4 subtitle4_dark">
-              Team 404expats represents one of the most structured athletic
-              communities in the world, resulting in clear communication from
-              top to bottom (and vice versa) of values, partnerships, team
-              direction, and feedback.
-              <br />
-              <br />
-              The end result: a family that understands what is happening,
-              when it’s happening, and where it is headed together.
-            </div>
-            <img src="./assets/trace-3elements.svg" alt="green ornament from 3 parts"
-              class="how-we-did-2__text-block_ornament" />
-          </div>
-        </section>
-      </section>
-      <section>
-        <section class="section program-types">
-          <div class="_container _flex-col program-types__wrapper">
-            <div class="program-types__programs">
-              <div class="program-types__title subtitle2 subtitle2_accent">
-                Find your individual path to success
-              </div>
+        <section>
+          <section class="section program-types">
+            <div class="_container _flex-col program-types__wrapper">
+              <div class="program-types__programs">
+                <div class="program-types__title subtitle2 subtitle2_accent">
+                  Find your individual path to success
+                </div>
 
-              <div class="program-types__content-blocks">
-                <a href="#popup-programs" onclick="openCity(event, 'ten-k')"
-                  class="program-types__button square subtitle1 subtitle1_light popup-link">
-                  <div class="tap-icon">
-                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M27.9543 10.3601L2.83427 1.0001C2.65514 0.93298 2.46051 0.918648 2.27347 0.958807C2.08644 0.998965 1.91484 1.09193 1.77905 1.22667C1.64325 1.36141 1.54896 1.53228 1.50734 1.71899C1.46573 1.90571 1.47855 2.10045 1.54427 2.2801L10.9543 27.4401C11.0273 27.635 11.1593 27.8022 11.3319 27.9185C11.5045 28.0347 11.7091 28.0943 11.9171 28.0888C12.1251 28.0832 12.3263 28.013 12.4924 27.8877C12.6586 27.7625 12.7816 27.5885 12.8443 27.3901L15.5343 18.6401L24.6543 27.5401C24.8416 27.7264 25.0951 27.8309 25.3593 27.8309C25.6235 27.8309 25.8769 27.7264 26.0643 27.5401L28.4143 25.1901C28.6005 25.0027 28.7051 24.7493 28.7051 24.4851C28.7051 24.2209 28.6005 23.9675 28.4143 23.7801L19.3243 14.9201L27.9543 12.2501C28.1508 12.1821 28.3212 12.0545 28.4418 11.8852C28.5624 11.7158 28.6272 11.513 28.6272 11.3051C28.6272 11.0972 28.5624 10.8944 28.4418 10.725C28.3212 10.5557 28.1508 10.4281 27.9543 10.3601Z"
-                        fill="white" stroke="black" />
-                    </svg>
-                    <!-- <svg
+                <div class="program-types__content-blocks">
+                  <a
+                    href="#popup-programs"
+                    onclick="openCity(event, 'ten-k')"
+                    class="program-types__button square subtitle1 subtitle1_light popup-link"
+                  >
+                    <div class="tap-icon">
+                      <svg
+                        width="30"
+                        height="29"
+                        viewBox="0 0 30 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.9543 10.3601L2.83427 1.0001C2.65514 0.93298 2.46051 0.918648 2.27347 0.958807C2.08644 0.998965 1.91484 1.09193 1.77905 1.22667C1.64325 1.36141 1.54896 1.53228 1.50734 1.71899C1.46573 1.90571 1.47855 2.10045 1.54427 2.2801L10.9543 27.4401C11.0273 27.635 11.1593 27.8022 11.3319 27.9185C11.5045 28.0347 11.7091 28.0943 11.9171 28.0888C12.1251 28.0832 12.3263 28.013 12.4924 27.8877C12.6586 27.7625 12.7816 27.5885 12.8443 27.3901L15.5343 18.6401L24.6543 27.5401C24.8416 27.7264 25.0951 27.8309 25.3593 27.8309C25.6235 27.8309 25.8769 27.7264 26.0643 27.5401L28.4143 25.1901C28.6005 25.0027 28.7051 24.7493 28.7051 24.4851C28.7051 24.2209 28.6005 23.9675 28.4143 23.7801L19.3243 14.9201L27.9543 12.2501C28.1508 12.1821 28.3212 12.0545 28.4418 11.8852C28.5624 11.7158 28.6272 11.513 28.6272 11.3051C28.6272 11.0972 28.5624 10.8944 28.4418 10.725C28.3212 10.5557 28.1508 10.4281 27.9543 10.3601Z"
+                          fill="white"
+                          stroke="black"
+                        />
+                      </svg>
+                      <!-- <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 200 200"
                       >
@@ -318,662 +455,1153 @@
                           d="M139.93,107.76l-41.12-6.93V70.28A9.25,9.25,0,0,0,89.56,61h0a9.25,9.25,0,0,0-9.25,9.25v57.36L71,116.85c-3.61-3.61-8.44-3.89-13.08,0,0,0-7.24,5.84-3.83,9.25l34,34h42.63a9.25,9.25,0,0,0,9.07-7.43l6.82-34.09A9.28,9.28,0,0,0,139.93,107.76Z"
                         />
                       </svg> -->
+                    </div>
+                    <div class="rbg _green-bg-transparent">
+                      <img
+                        src="./assets/program-type-1.jpg"
+                        alt="Finish of 10k"
+                      />
+                    </div>
+                    <div
+                      class="program-types__button_relative subtitle1 subtitle1_light"
+                    >
+                      My First 10K
+                    </div>
+                  </a>
+                  <a
+                    href="#popup-programs"
+                    onclick="openCity(event, 'twenty-one-k')"
+                    class="program-types__button square subtitle1 subtitle1_light popup-link"
+                  >
+                    <div class="rbg _green-bg-transparent">
+                      <img
+                        src="./assets/program-type-2.jpg"
+                        alt="mens running"
+                      />
+                    </div>
+                    <div
+                      class="program-types__button_relative subtitle1 subtitle1_light"
+                    >
+                      My First 21K
+                    </div>
+                  </a>
+                  <a
+                    href="#popup-programs"
+                    onclick="openCity(event, 'forty-two-k')"
+                    class="program-types__button square subtitle1 subtitle1_light popup-link"
+                  >
+                    <div class="rbg _green-bg-transparent">
+                      <img
+                        src="./assets/program-type-3.jpg"
+                        alt="running event"
+                      />
+                    </div>
+                    <div
+                      class="program-types__button_relative subtitle1 subtitle1_light"
+                    >
+                      My First 42K
+                    </div>
+                  </a>
+                  <a
+                    href="#popup-programs"
+                    onclick="openCity(event, 'ironman')"
+                    class="program-types__button square subtitle1 subtitle1_light popup-link"
+                  >
+                    <div class="rbg _green-bg-transparent">
+                      <img
+                        src="./assets/program-type-4.jpg"
+                        alt="finish of the IRONMAN"
+                      />
+                    </div>
+                    <div
+                      class="program-types__button_relative subtitle1 subtitle1_light"
+                    >
+                      My First IRONMAN
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="program-types__cta cta-block cta-block_big-screen-visible"
+              >
+                <div class="cta-block__content">
+                  <div class="rbg cta-block__content-block_photo">
+                    <img
+                      src="./assets/three-people.jpg"
+                      alt="running team in Riyadh"
+                    />
                   </div>
-                  <div class="rbg _green-bg-transparent">
-                    <img src="./assets/program-type-1.jpg" alt="Finish of 10k" />
+                  <div class="cta-block__text subtitle4 subtitle4_dark">
+                    We measure and guide your training execution to help you
+                    stay on track and do the right training.
+                    <br />
+                    <br />
+                    Your performance build on platform of health.
                   </div>
-                  <div class="program-types__button_relative subtitle1 subtitle1_light">
-                    My First 10K
-                  </div>
-                </a>
-                <a href="#popup-programs" onclick="openCity(event, 'twenty-one-k')"
-                  class="program-types__button square subtitle1 subtitle1_light popup-link">
-                  <div class="rbg _green-bg-transparent">
-                    <img src="./assets/program-type-2.jpg" alt="mens running" />
-                  </div>
-                  <div class="program-types__button_relative subtitle1 subtitle1_light">
-                    My First 21K
-                  </div>
-                </a>
-                <a href="#popup-programs" onclick="openCity(event, 'forty-two-k')"
-                  class="program-types__button square subtitle1 subtitle1_light popup-link">
-                  <div class="rbg _green-bg-transparent">
-                    <img src="./assets/program-type-3.jpg" alt="running event" />
-                  </div>
-                  <div class="program-types__button_relative subtitle1 subtitle1_light">
-                    My First 42K
-                  </div>
-                </a>
-                <a href="#popup-programs" onclick="openCity(event, 'ironman')"
-                  class="program-types__button square subtitle1 subtitle1_light popup-link">
-                  <div class="rbg _green-bg-transparent">
-                    <img src="./assets/program-type-4.jpg" alt="finish of the IRONMAN" />
-                  </div>
-                  <div class="program-types__button_relative subtitle1 subtitle1_light">
-                    My First IRONMAN
-                  </div>
-                </a>
+                  <a
+                    href="#popup-form"
+                    type="button"
+                    class="button button_accent popup-link"
+                  >
+                    Join club
+                  </a>
+                  <img
+                    src="./assets/trace-1element.svg"
+                    alt="green ornament"
+                    class="cta-block__content-block_ornament"
+                  />
+                </div>
               </div>
             </div>
-            <div class="program-types__cta cta-block cta-block_big-screen-visible">
-              <div class="cta-block__content">
-                <div class="rbg cta-block__content-block_photo">
-                  <img src="./assets/three-people.jpg" alt="running team in Riyadh" />
+          </section>
+          <section class="section cta-block cta-block_big-screen-invisible">
+            <div class="cta-block__content _container">
+              <div class="cta-block__text subtitle4 subtitle4_dark">
+                We measure and guide your training execution to help you stay on
+                track and do the right training.
+                <br />
+                <br />
+                Your performance build on platform of health.
+              </div>
+              <a
+                href="#popup-form"
+                type="button"
+                class="button button_accent popup-link"
+              >
+                Join club
+              </a>
+              <img
+                src="./assets/trace-1element.svg"
+                alt="green ornament"
+                class="cta-block__content-block_ornament"
+              />
+              <div class="rbg cta-block__content-block_photo">
+                <img
+                  src="./assets/three-people.jpg"
+                  alt="running team in Riyadh"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="how-it-works" class="section how-it-works">
+          <div class="how-it-works_bg rbg">
+            <img
+              src="./assets/background-man-with-water.jpg"
+              alt="background man with water"
+            />
+          </div>
+          <div class="_container _flex-col">
+            <div class="how-it-works__title subtitle2 subtitle2_light">
+              How does it work
+            </div>
+            <div class="how-it-works__content _flex-col">
+              <div class="how-it-works__step-block step-block step-block_odd">
+                <div class="step-block_bg rbg">
+                  <img src="./assets/step-1-photo.jpg" alt="running coach" />
                 </div>
-                <div class="cta-block__text subtitle4 subtitle4_dark">
-                  We measure and guide your training execution to help you
-                  stay on track and do the right training.
-                  <br />
-                  <br />
-                  Your performance build on platform of health.
+                <div
+                  class="step-block__step-text button button_light button_square"
+                >
+                  Step 1
                 </div>
-                <a href="#popup-form" type="button" class="button button_accent popup-link">
-                  Join club
-                </a>
-                <img src="./assets/trace-1element.svg" alt="green ornament" class="cta-block__content-block_ornament" />
+                <div
+                  class="step-block__relative-text subtitle4 subtitle4_light"
+                >
+                  Setting final goal
+                </div>
+              </div>
+              <div class="how-it-works__step-block step-block step-block_even">
+                <div class="step-block_bg rbg">
+                  <img
+                    src="./assets/step-2-photo.jpg"
+                    alt="strength training"
+                  />
+                </div>
+                <div
+                  class="step-block__step-text button button_light button_square"
+                >
+                  Step 2
+                </div>
+                <div
+                  class="step-block__relative-text subtitle4 subtitle4_light"
+                >
+                  Training plan
+                </div>
+              </div>
+              <div class="how-it-works__step-block step-block step-block_odd">
+                <div class="step-block_bg rbg">
+                  <img
+                    src="./assets/step-3-photo.jpg"
+                    alt="interval training"
+                  />
+                </div>
+                <div
+                  class="step-block__step-text button button_light button_square"
+                >
+                  Step 3
+                </div>
+                <div
+                  class="step-block__relative-text subtitle4 subtitle4_light"
+                >
+                  Preparation for the <br />
+                  start line
+                </div>
+              </div>
+              <div class="how-it-works__step-block step-block step-block_even">
+                <div class="step-block_bg rbg">
+                  <img
+                    src="./assets/step-4-photo.jpg"
+                    alt="Running club in Riyadh"
+                  />
+                </div>
+                <div
+                  class="step-block__step-text button button_light button_square"
+                >
+                  Step 4
+                </div>
+                <div
+                  class="step-block__relative-text subtitle4 subtitle4_light"
+                >
+                  Working your weaknesses
+                </div>
+              </div>
+              <div class="how-it-works__step-block step-block step-block_odd">
+                <div class="step-block_bg rbg">
+                  <img src="./assets/step-5-photo.jpg" alt="running athlete" />
+                </div>
+                <div
+                  class="step-block__step-text button button_light button_square"
+                >
+                  Step 5
+                </div>
+                <div
+                  class="step-block__relative-text subtitle4 subtitle4_light"
+                >
+                  Building strong physical foundation
+                </div>
+              </div>
+              <div class="how-it-works__step-block step-block step-block_even">
+                <div class="step-block_bg rbg">
+                  <img src="./assets/step-6-photo.jpg" alt="mental health" />
+                </div>
+                <div
+                  class="step-block__step-text button button_light button_square"
+                >
+                  Step 6
+                </div>
+                <div
+                  class="step-block__relative-text subtitle4 subtitle4_light"
+                >
+                  Mental health
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="section cta-block cta-block_big-screen-invisible">
-          <div class="cta-block__content _container">
-            <div class="cta-block__text subtitle4 subtitle4_dark">
-              We measure and guide your training execution to help you stay on
-              track and do the right training.
-              <br />
-              <br />
-              Your performance build on platform of health.
-            </div>
-            <a href="#popup-form" type="button" class="button button_accent popup-link">
-              Join club
-            </a>
-            <img src="./assets/trace-1element.svg" alt="green ornament" class="cta-block__content-block_ornament" />
-            <div class="rbg cta-block__content-block_photo">
-              <img src="./assets/three-people.jpg" alt="running team in Riyadh" />
+        <section id="team" class="section team section_green section_trace">
+          <div class="_container _flex-col team_wrapper">
+            <div class="team__title subtitle2 subtitle2_light">Team</div>
+            <div class="team__content team__content_flex">
+              <button class="card">
+                <div class="card-side front">
+                  <div class="tap-icon tap-icon_bottom">
+                    <svg
+                      width="30"
+                      height="31"
+                      viewBox="0 0 30 31"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M27.9543 11.3601L2.83427 2.0001C2.65514 1.93298 2.46051 1.91865 2.27347 1.95881C2.08644 1.99897 1.91484 2.09193 1.77905 2.22667C1.64325 2.36141 1.54896 2.53228 1.50734 2.71899C1.46573 2.90571 1.47855 3.10045 1.54427 3.2801L10.9543 28.4401C11.0273 28.635 11.1593 28.8022 11.3319 28.9185C11.5045 29.0347 11.7091 29.0943 11.9171 29.0888C12.1251 29.0832 12.3263 29.013 12.4924 28.8877C12.6586 28.7625 12.7816 28.5885 12.8443 28.3901L15.5343 19.6401L24.6543 28.5401C24.8416 28.7264 25.0951 28.8309 25.3593 28.8309C25.6235 28.8309 25.8769 28.7264 26.0643 28.5401L28.4143 26.1901C28.6005 26.0027 28.7051 25.7493 28.7051 25.4851C28.7051 25.2209 28.6005 24.9675 28.4143 24.7801L19.3243 15.9201L27.9543 13.2501C28.1508 13.1821 28.3212 13.0545 28.4418 12.8852C28.5624 12.7158 28.6272 12.513 28.6272 12.3051C28.6272 12.0972 28.5624 11.8944 28.4418 11.725C28.3212 11.5557 28.1508 11.4281 27.9543 11.3601Z"
+                        fill="black"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </div>
+                  <div class="team__short-card short-card rbg">
+                    <img
+                      src="./assets/team-member-1.jpg"
+                      alt="Head running coach"
+                    />
+                    <div class="short-card__relative-text">
+                      <div class="subtitle1 subtitle1_big subtitle1_light">
+                        Serhii Duniak
+                      </div>
+                      <div class="subtitle4 subtitle4_small subtitle4_light">
+                        running coach
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-side back">
+                  <div
+                    class="team__full-card full-card full-card_green full-card_white-border"
+                  >
+                    <div class="full-card__image">
+                      <img
+                        src="./assets/team-member-1-short.jpg"
+                        alt="Head running coach"
+                      />
+                    </div>
+
+                    <div class="full-card__title-text">
+                      <div class="subtitle1 subtitle1_big subtitle1_light">
+                        Sergii Duniak
+                      </div>
+                      <div class="subtitle4 subtitle4_small subtitle4_light">
+                        Track coach
+                      </div>
+                    </div>
+                    <div class="full-card__discription-text">
+                      <div class="full-card__col">
+                        <div class="text text_med text_light">
+                          Coaching <br />
+                          experience
+                        </div>
+                        <div class="subtitle1 subtitle1_light">4 years</div>
+                      </div>
+                      <div class="full-card__col">
+                        <div class="text text_med text_light">
+                          Personal Best <br />
+                          on Marathon
+                        </div>
+                        <div class="subtitle1 subtitle1_light">2:58:00</div>
+                      </div>
+                    </div>
+                    <div class="full-card__social-icons">
+                      <a
+                        href="https://www.instagram.com/sergei_duniak/?igshid=YmMyMTA2M2Y%3D"
+                        class="social-icon-button"
+                        target="_blank"
+                        ><img
+                          src="./assets/instagram-sketched 2.svg"
+                          alt="instagram icon"
+                        />
+                      </a>
+                      <a
+                        href="https://www.facebook.com/dunyak.sergei"
+                        class="social-icon-button"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/facebook (2) 2.svg"
+                          alt="facebook icon"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </button>
+              <button class="card">
+                <div class="card-side front">
+                  <div class="team__short-card short-card rbg">
+                    <img
+                      src="./assets/team-member-2.jpg"
+                      alt="running captain"
+                    />
+                    <div class="short-card__relative-text">
+                      <div class="subtitle1 subtitle1_big subtitle1_light">
+                        Igor Pidhainiy
+                      </div>
+                      <div class="subtitle4 subtitle4_small subtitle4_light">
+                        captain
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-side back">
+                  <div
+                    class="team__full-card full-card full-card_green full-card_white-border"
+                  >
+                    <div class="full-card__image">
+                      <img
+                        src="./assets/team-member-2-short.jpg"
+                        alt="running captain"
+                      />
+                    </div>
+
+                    <div class="full-card__title-text">
+                      <div class="subtitle1 subtitle1_big subtitle1_light">
+                        Igor Pidhainyi
+                      </div>
+                      <div class="subtitle4 subtitle4_small subtitle4_light">
+                        Captain
+                      </div>
+                    </div>
+                    <div class="full-card__discription-text">
+                      <div class="full-card__col">
+                        <div class="text text_med text_light">
+                          Running <br />
+                          experience
+                        </div>
+                        <div class="subtitle1 subtitle1_light">3 years</div>
+                      </div>
+                      <div class="full-card__col">
+                        <div class="text text_med text_light">
+                          Personal Best <br />
+                          on Marathon
+                        </div>
+                        <div class="subtitle1 subtitle1_light">3:43:00</div>
+                      </div>
+                    </div>
+                    <div class="full-card__social-icons">
+                      <a
+                        href="https://instagram.com/run_igor_run5?igshid=YmMyMTA2M2Y="
+                        class="social-icon-button"
+                        target="_blank"
+                        ><img
+                          src="./assets/instagram-sketched 2.svg"
+                          alt="instagram icon"
+                        />
+                      </a>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100078851486938"
+                        class="social-icon-button"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/facebook (2) 2.svg"
+                          alt="facebook icon"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </button>
+              <button class="card">
+                <div class="card-side front">
+                  <div class="team__short-card short-card rbg">
+                    <img
+                      src="./assets/team-member-3-short.jpg"
+                      alt="Triathlon Head Coach"
+                    />
+                    <div class="short-card__relative-text">
+                      <div class="subtitle1 subtitle1_big subtitle1_light">
+                        Volodymyr Ostrykov
+                      </div>
+                      <div class="subtitle4 subtitle4_small subtitle4_light">
+                        Founder & head coach
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-side back">
+                  <div
+                    class="team__full-card full-card full-card_green full-card_white-border"
+                  >
+                    <div class="full-card__image">
+                      <img
+                        src="./assets/team-member-3.jpg"
+                        alt="Triathlon Head Coach"
+                      />
+                    </div>
+
+                    <div class="full-card__title-text">
+                      <div
+                        class="subtitle1 subtitle1_big subtitle1_light subtitle1_line-height-small"
+                      >
+                        Volodymyr Ostrykov
+                      </div>
+                      <div class="subtitle4 subtitle4_small subtitle4_light">
+                        Founder and head coach
+                      </div>
+                    </div>
+                    <div class="full-card__discription-text">
+                      <div class="full-card__col">
+                        <div class="text text_med text_light">
+                          Coaching <br />
+                          experience
+                        </div>
+                        <div class="subtitle1 subtitle1_light">8 years</div>
+                      </div>
+                      <div class="full-card__col">
+                        <div class="text text_med text_light">
+                          Personal Best <br />
+                          on Ironman
+                        </div>
+                        <div class="subtitle1 subtitle1_light">9:20:40</div>
+                      </div>
+                    </div>
+                    <div class="full-card__social-icons">
+                      <a
+                        href="https://instagram.com/ostrikov_coach_team404?igshid=YmMyMTA2M2Y="
+                        class="social-icon-button"
+                        target="_blank"
+                        ><img
+                          src="./assets/instagram-sketched 2.svg"
+                          alt="instagram icon"
+                        />
+                      </a>
+                      <a
+                        href="https://www.facebook.com/ostrikov.vova"
+                        class="social-icon-button"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/facebook (2) 2.svg"
+                          alt="facebook icon"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </button>
             </div>
           </div>
         </section>
-      </section>
-      <section id="how-it-works" class="section how-it-works">
-        <div class="how-it-works_bg rbg">
-          <img src="./assets/background-man-with-water.jpg" alt="background man with water" />
-        </div>
-        <div class="_container _flex-col">
-          <div class="how-it-works__title subtitle2 subtitle2_light">
-            How does it work
-          </div>
-          <div class="how-it-works__content _flex-col">
-            <div class="how-it-works__step-block step-block step-block_odd">
-              <div class="step-block_bg rbg">
-                <img src="./assets/step-1-photo.jpg" alt="running coach" />
-              </div>
-              <div class="step-block__step-text button button_light button_square">
-                Step 1
-              </div>
-              <div class="step-block__relative-text subtitle4 subtitle4_light">
-                Setting final goal
-              </div>
+        <section id="packages" class="section packages">
+          <div class="_container _flex-col">
+            <div class="packages_title subtitle2 subtitle2_accent">
+              Packages
             </div>
-            <div class="how-it-works__step-block step-block step-block_even">
-              <div class="step-block_bg rbg">
-                <img src="./assets/step-2-photo.jpg" alt="strength training" />
-              </div>
-              <div class="step-block__step-text button button_light button_square">
-                Step 2
-              </div>
-              <div class="step-block__relative-text subtitle4 subtitle4_light">
-                Training plan
-              </div>
-            </div>
-            <div class="how-it-works__step-block step-block step-block_odd">
-              <div class="step-block_bg rbg">
-                <img src="./assets/step-3-photo.jpg" alt="interval training" />
-              </div>
-              <div class="step-block__step-text button button_light button_square">
-                Step 3
-              </div>
-              <div class="step-block__relative-text subtitle4 subtitle4_light">
-                Preparation for the <br />
-                start line
-              </div>
-            </div>
-            <div class="how-it-works__step-block step-block step-block_even">
-              <div class="step-block_bg rbg">
-                <img src="./assets/step-4-photo.jpg" alt="Running club in Riyadh" />
-              </div>
-              <div class="step-block__step-text button button_light button_square">
-                Step 4
-              </div>
-              <div class="step-block__relative-text subtitle4 subtitle4_light">
-                Working your weaknesses
-              </div>
-            </div>
-            <div class="how-it-works__step-block step-block step-block_odd">
-              <div class="step-block_bg rbg">
-                <img src="./assets/step-5-photo.jpg" alt="running athlete" />
-              </div>
-              <div class="step-block__step-text button button_light button_square">
-                Step 5
-              </div>
-              <div class="step-block__relative-text subtitle4 subtitle4_light">
-                Building strong physical foundation
-              </div>
-            </div>
-            <div class="how-it-works__step-block step-block step-block_even">
-              <div class="step-block_bg rbg">
-                <img src="./assets/step-6-photo.jpg" alt="mental health" />
-              </div>
-              <div class="step-block__step-text button button_light button_square">
-                Step 6
-              </div>
-              <div class="step-block__relative-text subtitle4 subtitle4_light">
-                Mental health
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="team" class="section team section_green section_trace">
-        <div class="_container _flex-col team_wrapper">
-          <div class="team__title subtitle2 subtitle2_light">Team</div>
-          <div class="team__content team__content_flex">
-            <button class="card">
-              <div class="card-side front">
-                <div class="tap-icon tap-icon_bottom">
-                  <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M27.9543 11.3601L2.83427 2.0001C2.65514 1.93298 2.46051 1.91865 2.27347 1.95881C2.08644 1.99897 1.91484 2.09193 1.77905 2.22667C1.64325 2.36141 1.54896 2.53228 1.50734 2.71899C1.46573 2.90571 1.47855 3.10045 1.54427 3.2801L10.9543 28.4401C11.0273 28.635 11.1593 28.8022 11.3319 28.9185C11.5045 29.0347 11.7091 29.0943 11.9171 29.0888C12.1251 29.0832 12.3263 29.013 12.4924 28.8877C12.6586 28.7625 12.7816 28.5885 12.8443 28.3901L15.5343 19.6401L24.6543 28.5401C24.8416 28.7264 25.0951 28.8309 25.3593 28.8309C25.6235 28.8309 25.8769 28.7264 26.0643 28.5401L28.4143 26.1901C28.6005 26.0027 28.7051 25.7493 28.7051 25.4851C28.7051 25.2209 28.6005 24.9675 28.4143 24.7801L19.3243 15.9201L27.9543 13.2501C28.1508 13.1821 28.3212 13.0545 28.4418 12.8852C28.5624 12.7158 28.6272 12.513 28.6272 12.3051C28.6272 12.0972 28.5624 11.8944 28.4418 11.725C28.3212 11.5557 28.1508 11.4281 27.9543 11.3601Z"
-                      fill="black" stroke="white" stroke-width="2" />
-                  </svg>
-                </div>
-                <div class="team__short-card short-card rbg">
-                  <img src="./assets/team-member-1.jpg" alt="Head running coach" />
-                  <div class="short-card__relative-text">
-                    <div class="subtitle1 subtitle1_big subtitle1_light">
-                      Serhii Duniak
-                    </div>
-                    <div class="subtitle4 subtitle4_small subtitle4_light">
-                      running coach
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-side back">
-                <div class="team__full-card full-card full-card_green full-card_white-border">
-                  <div class="full-card__image">
-                    <img src="./assets/team-member-1-short.jpg" alt="Head running coach" />
-                  </div>
-
-                  <div class="full-card__title-text">
-                    <div class="subtitle1 subtitle1_big subtitle1_light">
-                      Sergii Duniak
-                    </div>
-                    <div class="subtitle4 subtitle4_small subtitle4_light">
-                      Track coach
-                    </div>
-                  </div>
-                  <div class="full-card__discription-text">
-                    <div class="full-card__col">
-                      <div class="text text_med text_light">
-                        Coaching <br />
-                        experience
-                      </div>
-                      <div class="subtitle1 subtitle1_light">4 years</div>
-                    </div>
-                    <div class="full-card__col">
-                      <div class="text text_med text_light">
-                        Personal Best <br />
-                        on Marathon
-                      </div>
-                      <div class="subtitle1 subtitle1_light">2:58:00</div>
-                    </div>
-                  </div>
-                  <div class="full-card__social-icons">
-                    <a href="https://www.instagram.com/sergei_duniak/?igshid=YmMyMTA2M2Y%3D" class="social-icon-button"
-                      target="_blank"><img src="./assets/instagram-sketched 2.svg" alt="instagram icon" />
-                    </a>
-                    <a href="https://www.facebook.com/dunyak.sergei" class="social-icon-button" target="_blank">
-                      <img src="./assets/facebook (2) 2.svg" alt="facebook icon" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </button>
-            <button class="card">
-              <div class="card-side front">
-                <div class="team__short-card short-card rbg">
-                  <img src="./assets/team-member-2.jpg" alt="running captain" />
-                  <div class="short-card__relative-text">
-                    <div class="subtitle1 subtitle1_big subtitle1_light">
-                      Igor Pidhainiy
-                    </div>
-                    <div class="subtitle4 subtitle4_small subtitle4_light">
-                      captain
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-side back">
-                <div class="team__full-card full-card full-card_green full-card_white-border">
-                  <div class="full-card__image">
-                    <img src="./assets/team-member-2-short.jpg" alt="running captain" />
-                  </div>
-
-                  <div class="full-card__title-text">
-                    <div class="subtitle1 subtitle1_big subtitle1_light">
-                      Igor Pidhainyi
-                    </div>
-                    <div class="subtitle4 subtitle4_small subtitle4_light">
-                      Captain
-                    </div>
-                  </div>
-                  <div class="full-card__discription-text">
-                    <div class="full-card__col">
-                      <div class="text text_med text_light">
-                        Running <br />
-                        experience
-                      </div>
-                      <div class="subtitle1 subtitle1_light">3 years</div>
-                    </div>
-                    <div class="full-card__col">
-                      <div class="text text_med text_light">
-                        Personal Best <br />
-                        on Marathon
-                      </div>
-                      <div class="subtitle1 subtitle1_light">3:43:00</div>
-                    </div>
-                  </div>
-                  <div class="full-card__social-icons">
-                    <a href="https://instagram.com/run_igor_run5?igshid=YmMyMTA2M2Y=" class="social-icon-button"
-                      target="_blank"><img src="./assets/instagram-sketched 2.svg" alt="instagram icon" />
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100078851486938" class="social-icon-button"
-                      target="_blank">
-                      <img src="./assets/facebook (2) 2.svg" alt="facebook icon" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </button>
-            <button class="card">
-              <div class="card-side front">
-                <div class="team__short-card short-card rbg">
-                  <img src="./assets/team-member-3-short.jpg" alt="Triathlon Head Coach" />
-                  <div class="short-card__relative-text">
-                    <div class="subtitle1 subtitle1_big subtitle1_light">
-                      Volodymyr Ostrykov
-                    </div>
-                    <div class="subtitle4 subtitle4_small subtitle4_light">
-                      Founder & head coach
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-side back">
-                <div class="team__full-card full-card full-card_green full-card_white-border">
-                  <div class="full-card__image">
-                    <img src="./assets/team-member-3.jpg" alt="Triathlon Head Coach" />
-                  </div>
-
-                  <div class="full-card__title-text">
-                    <div class="subtitle1 subtitle1_big subtitle1_light subtitle1_line-height-small">
-                      Volodymyr Ostrykov
-                    </div>
-                    <div class="subtitle4 subtitle4_small subtitle4_light">
-                      Founder and head coach
-                    </div>
-                  </div>
-                  <div class="full-card__discription-text">
-                    <div class="full-card__col">
-                      <div class="text text_med text_light">
-                        Coaching <br />
-                        experience
-                      </div>
-                      <div class="subtitle1 subtitle1_light">8 years</div>
-                    </div>
-                    <div class="full-card__col">
-                      <div class="text text_med text_light">
-                        Personal Best <br />
-                        on Ironman
-                      </div>
-                      <div class="subtitle1 subtitle1_light">9:20:40</div>
-                    </div>
-                  </div>
-                  <div class="full-card__social-icons">
-                    <a href="https://instagram.com/ostrikov_coach_team404?igshid=YmMyMTA2M2Y="
-                      class="social-icon-button" target="_blank"><img src="./assets/instagram-sketched 2.svg"
-                        alt="instagram icon" />
-                    </a>
-                    <a href="https://www.facebook.com/ostrikov.vova" class="social-icon-button" target="_blank">
-                      <img src="./assets/facebook (2) 2.svg" alt="facebook icon" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-      </section>
-      <section id="packages" class="section packages">
-        <div class="_container _flex-col">
-          <div class="packages_title subtitle2 subtitle2_accent">
-            Packages
-          </div>
-          <div class="packages__content packages__content_flex">
-            <div class="packages__package-card package-card package-card_for-section full-card card full-card_green">
-              <div class="package-card__image">
-                <img src="./assets/speedometer-small.png" alt="speedometer on min" />
-              </div>
-
-              <div class="package-card__title-text subtitle1 subtitle1_light underlined">
-                Economy
-              </div>
-              <div class="package-card__price-text price">
-                <div class="price__text_small strikethrough">200 sar</div>
-                <div class="price__text_big">180 sar</div>
-              </div>
-              <div class="package-card__discription-text package-card__discription-text_list">
-                <ul>
-                  <li>personal training plan</li>
-                  <li>offline trainings</li>
-                  <li>accsess to the lecture&seminars databse</li>
-                  <li>accsess to the team's chats&channels</li>
-                </ul>
-              </div>
-              <div class="package-card__actions">
-                <a href="#popup-form" class="button button_light popup-link">Buy membership</a>
-                <a href="#popup-package-details" class="link link_light underlined popup-link">Learn more</a>
-              </div>
-            </div>
-            <div class="packages__package-card package-card package-card_for-section full-card card full-card_green">
-              <div class="package-card__image">
-                <img src="./assets/speedometer-medium.png" alt="step1-photo" />
-              </div>
-
-              <div class="package-card__title-text subtitle1 subtitle1_light underlined">
-                Standart
-              </div>
-              <div class="package-card__price-text price">
-                <div class="price__text_small strikethrough">350 sar</div>
-                <div class="price__text_big">300 sar</div>
-              </div>
-              <div class="package-card__discription-text package-card__discription-text_list">
-                <ul>
-                  <li>personal training plan</li>
-                  <li>offline trainings</li>
-                  <li>personal tutor</li>
-                  <li>training process analysis</li>
-                  <li>group zoom trainings</li>
-                </ul>
-              </div>
-              <div class="package-card__actions">
-                <a href="#popup-form" class="button button_light popup-link">Buy membership</a>
-                <a href="#popup-package-details" class="link link_light underlined popup-link">Learn more</a>
-              </div>
-            </div>
-            <div class="packages__package-card package-card package-card_for-section full-card card full-card_green">
-              <div class="package-card__image">
-                <img src="./assets/speedometer-big.png" alt="speedometer on max" />
-              </div>
-
-              <div class="package-card__title-text subtitle1 subtitle1_light underlined">
-                VIP
-              </div>
-              <div class="package-card__price-text price">
-                <div class="price__text_small strikethrough">1100 sar</div>
-                <div class="price__text_big">1000 sar</div>
-              </div>
-              <div class="package-card__discription-text package-card__discription-text_list">
-                <ul>
-                  <li>personal training plan</li>
-                  <li>offline trainings</li>
-                  <li>VIP tutor</li>
-                  <li>analysis of every training</li>
-                  <li>personal zoom trainings</li>
-                  <li>team's merch</li>
-                </ul>
-              </div>
-              <div class="package-card__actions">
-                <a href="#popup-form" class="button button_light popup-link">Buy membership</a>
-                <a href="#popup-package-details" class="link link_light underlined popup-link">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer section">
-      <div class="_container footer__wrapper">
-        <img src="./assets/logo.jpg" alt="logo" width="90" height="47" />
-        <nav class="footer__menu">
-          <ul class="footer__list">
-            <li>
-              <a href="#achievments" class="footer__link">Achievments</a>
-            </li>
-            <li>
-              <a href="#packages" class="footer__link">Packages</a>
-            </li>
-            <li>
-              <a href="#how-it-works" class="footer__link">How does it work</a>
-            </li>
-            <li>
-              <a href="#team" class="footer__link">Team</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer__contacts contacts">
-          <div class="social-icons contacts_social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100083286185141" class="social-icon-button"
-              target="_blank">
-              <img src="./assets/facebook-green-icon.svg" alt="facebook icon" />
-            </a>
-            <a href="https://instagram.com/team404.expats?igshid=YmMyMTA2M2Y=" class="social-icon-button"
-              target="_blank"><img src="./assets/instagram-green.svg" alt="instagram icon" />
-            </a>
-          </div>
-          <div class="contacts_email contacts_accent">team404@gmail.com</div>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <div id="popup-form" class="popup">
-    <div class="popup__body">
-      <div class="popup__content-form popup__content">
-        <a class="popup__close popup__close_small close-popup close-icon close-icon_small"><span></span></a>
-        <div class="popup__title">You are one step away from your goal</div>
-        <div class="popup__subtitle">
-          Leave your details below and we will contact you shortly
-        </div>
-        <div class="popup__form form">
-          <form autocomplete="off" id="form" action="https://getform.io/f/a15bcaef-000a-4635-80d0-efc760b89654"
-            method="POST">
-            <input id="form-name" type="text" name="name" placeholder="Name" class="form__input" required />
-
-            <input type="tel" id="phone" name="phone" placeholder="Number" class="form__input" autocomplete="off"
-              required />
-
-            <input type="submit" class="button button_light form__button" value="Send" />
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="popup-programs" class="popup">
-    <div class="popup__body">
-      <div class="popup__content popup__content-programs content-programs">
-        <a class="popup__close close-popup close-icon"><span></span></a>
-        <img src="./assets/trace-white-1element.svg" alt="ornament white" class="content-programs__ornament" />
-        <div class="content-programs__actions tab">
-          <div onclick="openCity(event, 'ten-k')"
-            class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_ten-k">
-            My First 10k
-          </div>
-          <div onclick="openCity(event, 'twenty-one-k')"
-            class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_twenty-one-k">
-            My First 21k
-          </div>
-          <div onclick="openCity(event, 'forty-two-k')"
-            class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_forty-two-k">
-            My First 42k
-          </div>
-          <div onclick="openCity(event, 'ironman')"
-            class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_ironman">
-            My First IRONMAN
-          </div>
-        </div>
-        <div class="content-programs__description-wrapper">
-          <a href="#popup-form" type="button" class="content-programs__cta button button_light popup-link">Buy
-            membership</a>
-          <div id="ten-k" class="programs-description programs-description__10k tabcontent">
-            <div class="programs-description__text">
-              <div class="programs-description__preparation-length">
-                <div class="programs-description__preparation-length_text text_light">
-                  Preparation
-                </div>
-                <div class="programs-description__preparation-length_numbers">
-                  1-4 months
-                </div>
-              </div>
-              <div class="programs-description__preparation-text programs-description__preparation-text_list">
-                <ul>
-                  <li>Injury preventing and strengthening your weak spots</li>
-                  <li>Cardiovascular development</li>
-                  <li>Sports gear selection</li>
-                  <li>Improving basic running technique</li>
-                  <li>
-                    Creation and control of your regular training system
-                  </li>
-                  <li>
-                    Adjustment of nutrition & dietary supplements, vitamins
-                    along with your weight correction
-                  </li>
-                  <li>
-                    Road running introduction and getting ready for your first
-                    competition.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="programs-description__photo">
-              <img src="./assets/program-photo-10k.jpg" alt="10k runners" />
-            </div>
-          </div>
-          <div id="twenty-one-k" class="programs-description programs-description__21k tabcontent">
-            <div class="programs-description__text">
-              <div class="programs-description__preparation-length">
-                <div class="programs-description__preparation-length_text">
-                  Preparation
-                </div>
-                <div class="programs-description__preparation-length_numbers">
-                  3-6 months
-                </div>
-              </div>
-              <div class="programs-description__preparation-text programs-description__preparation-text_list">
-                <ul>
-                  <li>Sports gear selection</li>
-                  <li>
-                    Functional test and detailed analysis of your fitness form
-                  </li>
-                  <li>Individual plan adapted to each athlete</li>
-                  <li>Improving your efficiency</li>
-                  <li>Nutrition plan for your each race</li>
-                </ul>
-              </div>
-            </div>
-            <div class="programs-description__photo">
-              <img src="./assets/program-photo-21k.png" alt="finisher shows heart" />
-            </div>
-          </div>
-          <div id="forty-two-k" class="programs-description programs-description__42k tabcontent">
-            <div class="programs-description__text">
-              <div class="programs-description__preparation-length">
-                <div class="programs-description__preparation-length_text">
-                  Preparation
-                </div>
-                <div class="programs-description__preparation-length_numbers">
-                  6-16 months
-                </div>
-              </div>
-              <div class="programs-description__preparation-text programs-description__preparation-text_list">
-                <ul>
-                  <li>Functional tests and progress zones research</li>
-                  <li>The most efficient running technique training</li>
-                  <li>Race nutrition personal selection and testing</li>
-                  <li>Fat metabolism and aerobic threshold training</li>
-                  <li>Mental preparation for the marathon</li>
-                  <li>Choosing most suitable race</li>
-                </ul>
-              </div>
-            </div>
-            <div class="programs-description__photo">
-              <img src="./assets/program-photo-42k.png" alt="42k finisher" />
-            </div>
-          </div>
-          <div id="ironman" class="programs-description programs-description__ironman tabcontent">
-            <div class="programs-description__text">
-              <div class="programs-description__preparation-length">
-                <div class="programs-description__preparation-length_text">
-                  Preparation
-                </div>
-                <div class="programs-description__preparation-length_numbers">
-                  12-16 months
-                </div>
-              </div>
-              <div class="programs-description__preparation-text programs-description__preparation-text_list">
-                <ul>
-                  <li>
-                    Elaboration of the smallest details along with running
-                    technique optimization
-                  </li>
-                  <li>
-                    Functional tests to define progress of heat rate zones
-                  </li>
-                  <li>Perfect sports gear selection</li>
-                  <li>Nutrition plan</li>
-                  <li>Individual training plan</li>
-                  <li>
-                    Building sports nutrition & dietary supplements plan for
-                    each race
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="programs-description__photo">
-              <img src="./assets/program-photo-ironman.jpg" alt="ironman finisher" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="popup-package-details" class="popup">
-    <div class="popup__body">
-      <div class="popup__content popup__content-programs content-programs">
-        <a class="popup__close close-popup close-icon"><span></span></a>
-        <div class="packages-popup_mobile">
-          <div class="nav-arrows">
-            <div class="swiper-prev">
-              <img src="./assets/arrow-mobile.svg" alt="" class="arrow-mobile_left" />
-            </div>
-            <div class="swiper-next">
-              <img src="./assets/arrow-mobile.svg" alt="" class="arrow-mobile_right" />
-            </div>
-          </div>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="packages__package-card package-card full-card card full-card_light swiper-slide">
-                <div class="package-card__image package-card__image_green">
-                  <img src="./assets/speedometer-small-green.png" alt="speedometr on min " />
+            <div class="packages__content packages__content_flex">
+              <div
+                class="packages__package-card package-card package-card_for-section full-card card full-card_green"
+              >
+                <div class="package-card__image">
+                  <img
+                    src="./assets/speedometer-small.png"
+                    alt="speedometer on min"
+                  />
                 </div>
 
-                <div class="package-card__title-text subtitle1 subtitle1 underlined underlined_green">
+                <div
+                  class="package-card__title-text subtitle1 subtitle1_light underlined"
+                >
                   Economy
                 </div>
                 <div class="package-card__price-text price">
                   <div class="price__text_small strikethrough">200 sar</div>
                   <div class="price__text_big">180 sar</div>
                 </div>
-                <div class="package-card__discription-text package-card__discription-text_grid">
+                <div
+                  class="package-card__discription-text package-card__discription-text_list"
+                >
+                  <ul>
+                    <li>personal training plan</li>
+                    <li>offline trainings</li>
+                    <li>accsess to the lecture&seminars databse</li>
+                    <li>accsess to the team's chats&channels</li>
+                  </ul>
+                </div>
+                <div class="package-card__actions">
+                  <a href="#popup-form" class="button button_light popup-link"
+                    >Buy membership</a
+                  >
+                  <a
+                    href="#popup-package-details"
+                    class="link link_light underlined popup-link"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+              <div
+                class="packages__package-card package-card package-card_for-section full-card card full-card_green"
+              >
+                <div class="package-card__image">
+                  <img
+                    src="./assets/speedometer-medium.png"
+                    alt="step1-photo"
+                  />
+                </div>
+
+                <div
+                  class="package-card__title-text subtitle1 subtitle1_light underlined"
+                >
+                  Standart
+                </div>
+                <div class="package-card__price-text price">
+                  <div class="price__text_small strikethrough">350 sar</div>
+                  <div class="price__text_big">300 sar</div>
+                </div>
+                <div
+                  class="package-card__discription-text package-card__discription-text_list"
+                >
+                  <ul>
+                    <li>personal training plan</li>
+                    <li>offline trainings</li>
+                    <li>personal tutor</li>
+                    <li>training process analysis</li>
+                    <li>group zoom trainings</li>
+                  </ul>
+                </div>
+                <div class="package-card__actions">
+                  <a href="#popup-form" class="button button_light popup-link"
+                    >Buy membership</a
+                  >
+                  <a
+                    href="#popup-package-details"
+                    class="link link_light underlined popup-link"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+              <div
+                class="packages__package-card package-card package-card_for-section full-card card full-card_green"
+              >
+                <div class="package-card__image">
+                  <img
+                    src="./assets/speedometer-big.png"
+                    alt="speedometer on max"
+                  />
+                </div>
+
+                <div
+                  class="package-card__title-text subtitle1 subtitle1_light underlined"
+                >
+                  VIP
+                </div>
+                <div class="package-card__price-text price">
+                  <div class="price__text_small strikethrough">1100 sar</div>
+                  <div class="price__text_big">1000 sar</div>
+                </div>
+                <div
+                  class="package-card__discription-text package-card__discription-text_list"
+                >
+                  <ul>
+                    <li>personal training plan</li>
+                    <li>offline trainings</li>
+                    <li>VIP tutor</li>
+                    <li>analysis of every training</li>
+                    <li>personal zoom trainings</li>
+                    <li>team's merch</li>
+                  </ul>
+                </div>
+                <div class="package-card__actions">
+                  <a href="#popup-form" class="button button_light popup-link"
+                    >Buy membership</a
+                  >
+                  <a
+                    href="#popup-package-details"
+                    class="link link_light underlined popup-link"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer section">
+        <div class="_container footer__wrapper">
+          <img src="./assets/logo.jpg" alt="logo" width="90" height="47" />
+          <nav class="footer__menu">
+            <ul class="footer__list">
+              <li>
+                <a href="#achievments" class="footer__link">Achievments</a>
+              </li>
+              <li>
+                <a href="#packages" class="footer__link">Packages</a>
+              </li>
+              <li>
+                <a href="#how-it-works" class="footer__link"
+                  >How does it work</a
+                >
+              </li>
+              <li>
+                <a href="#team" class="footer__link">Team</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contacts contacts">
+            <div class="social-icons contacts_social-icons">
+              <a
+                href="https://www.facebook.com/profile.php?id=100083286185141"
+                class="social-icon-button"
+                target="_blank"
+              >
+                <img
+                  src="./assets/facebook-green-icon.svg"
+                  alt="facebook icon"
+                />
+              </a>
+              <a
+                href="https://instagram.com/team404.expats?igshid=YmMyMTA2M2Y="
+                class="social-icon-button"
+                target="_blank"
+                ><img src="./assets/instagram-green.svg" alt="instagram icon" />
+              </a>
+            </div>
+            <div class="contacts_email contacts_accent">team404@gmail.com</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="popup-form" class="popup">
+      <div class="popup__body">
+        <div class="popup__content-form popup__content">
+          <a
+            class="popup__close popup__close_small close-popup close-icon close-icon_small"
+            ><span></span
+          ></a>
+          <div class="popup__title">You are one step away from your goal</div>
+          <div class="popup__subtitle">
+            Leave your details below and we will contact you shortly
+          </div>
+          <div class="popup__form form">
+            <form
+              autocomplete="off"
+              id="form"
+              action="https://getform.io/f/a15bcaef-000a-4635-80d0-efc760b89654"
+              method="POST"
+            >
+              <input
+                id="form-name"
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="form__input"
+                required
+              />
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Number"
+                class="form__input"
+                autocomplete="off"
+                required
+              />
+
+              <input
+                type="submit"
+                class="button button_light form__button"
+                value="Send"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-programs" class="popup">
+      <div class="popup__body">
+        <div class="popup__content popup__content-programs content-programs">
+          <a class="popup__close close-popup close-icon"><span></span></a>
+          <img
+            src="./assets/trace-white-1element.svg"
+            alt="ornament white"
+            class="content-programs__ornament"
+          />
+          <div class="content-programs__actions tab">
+            <div
+              onclick="openCity(event, 'ten-k')"
+              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_ten-k"
+            >
+              My First 10k
+            </div>
+            <div
+              onclick="openCity(event, 'twenty-one-k')"
+              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_twenty-one-k"
+            >
+              My First 21k
+            </div>
+            <div
+              onclick="openCity(event, 'forty-two-k')"
+              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_forty-two-k"
+            >
+              My First 42k
+            </div>
+            <div
+              onclick="openCity(event, 'ironman')"
+              class="content-programs__actions-button button button_accent-border button_square tablinks tablinks_ironman"
+            >
+              My First IRONMAN
+            </div>
+          </div>
+          <div class="content-programs__description-wrapper">
+            <a
+              href="#popup-form"
+              type="button"
+              class="content-programs__cta button button_light popup-link"
+              >Buy membership</a
+            >
+            <div
+              id="ten-k"
+              class="programs-description programs-description__10k tabcontent"
+            >
+              <div class="programs-description__text">
+                <div class="programs-description__preparation-length">
+                  <div
+                    class="programs-description__preparation-length_text text_light"
+                  >
+                    Preparation
+                  </div>
+                  <div class="programs-description__preparation-length_numbers">
+                    1-4 months
+                  </div>
+                </div>
+                <div
+                  class="programs-description__preparation-text programs-description__preparation-text_list"
+                >
+                  <ul>
+                    <li>Injury preventing and strengthening your weak spots</li>
+                    <li>Cardiovascular development</li>
+                    <li>Sports gear selection</li>
+                    <li>Improving basic running technique</li>
+                    <li>
+                      Creation and control of your regular training system
+                    </li>
+                    <li>
+                      Adjustment of nutrition & dietary supplements, vitamins
+                      along with your weight correction
+                    </li>
+                    <li>
+                      Road running introduction and getting ready for your first
+                      competition.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="programs-description__photo">
+                <img src="./assets/program-photo-10k.jpg" alt="10k runners" />
+              </div>
+            </div>
+            <div
+              id="twenty-one-k"
+              class="programs-description programs-description__21k tabcontent"
+            >
+              <div class="programs-description__text">
+                <div class="programs-description__preparation-length">
+                  <div class="programs-description__preparation-length_text">
+                    Preparation
+                  </div>
+                  <div class="programs-description__preparation-length_numbers">
+                    3-6 months
+                  </div>
+                </div>
+                <div
+                  class="programs-description__preparation-text programs-description__preparation-text_list"
+                >
+                  <ul>
+                    <li>Sports gear selection</li>
+                    <li>
+                      Functional test and detailed analysis of your fitness form
+                    </li>
+                    <li>Individual plan adapted to each athlete</li>
+                    <li>Improving your efficiency</li>
+                    <li>Nutrition plan for your each race</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="programs-description__photo">
+                <img
+                  src="./assets/program-photo-21k.png"
+                  alt="finisher shows heart"
+                />
+              </div>
+            </div>
+            <div
+              id="forty-two-k"
+              class="programs-description programs-description__42k tabcontent"
+            >
+              <div class="programs-description__text">
+                <div class="programs-description__preparation-length">
+                  <div class="programs-description__preparation-length_text">
+                    Preparation
+                  </div>
+                  <div class="programs-description__preparation-length_numbers">
+                    6-16 months
+                  </div>
+                </div>
+                <div
+                  class="programs-description__preparation-text programs-description__preparation-text_list"
+                >
+                  <ul>
+                    <li>Functional tests and progress zones research</li>
+                    <li>The most efficient running technique training</li>
+                    <li>Race nutrition personal selection and testing</li>
+                    <li>Fat metabolism and aerobic threshold training</li>
+                    <li>Mental preparation for the marathon</li>
+                    <li>Choosing most suitable race</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="programs-description__photo">
+                <img src="./assets/program-photo-42k.png" alt="42k finisher" />
+              </div>
+            </div>
+            <div
+              id="ironman"
+              class="programs-description programs-description__ironman tabcontent"
+            >
+              <div class="programs-description__text">
+                <div class="programs-description__preparation-length">
+                  <div class="programs-description__preparation-length_text">
+                    Preparation
+                  </div>
+                  <div class="programs-description__preparation-length_numbers">
+                    12-16 months
+                  </div>
+                </div>
+                <div
+                  class="programs-description__preparation-text programs-description__preparation-text_list"
+                >
+                  <ul>
+                    <li>
+                      Elaboration of the smallest details along with running
+                      technique optimization
+                    </li>
+                    <li>
+                      Functional tests to define progress of heat rate zones
+                    </li>
+                    <li>Perfect sports gear selection</li>
+                    <li>Nutrition plan</li>
+                    <li>Individual training plan</li>
+                    <li>
+                      Building sports nutrition & dietary supplements plan for
+                      each race
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="programs-description__photo">
+                <img
+                  src="./assets/program-photo-ironman.jpg"
+                  alt="ironman finisher"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-package-details" class="popup">
+      <div class="popup__body">
+        <div class="popup__content popup__content-programs content-programs">
+          <a class="popup__close close-popup close-icon"><span></span></a>
+          <div class="packages-popup_mobile">
+            <div class="nav-arrows">
+              <div class="swiper-prev">
+                <img
+                  src="./assets/arrow-mobile.svg"
+                  alt=""
+                  class="arrow-mobile_left"
+                />
+              </div>
+              <div class="swiper-next">
+                <img
+                  src="./assets/arrow-mobile.svg"
+                  alt=""
+                  class="arrow-mobile_right"
+                />
+              </div>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div
+                  class="packages__package-card package-card full-card card full-card_light swiper-slide"
+                >
+                  <div class="package-card__image package-card__image_green">
+                    <img
+                      src="./assets/speedometer-small-green.png"
+                      alt="speedometr on min "
+                    />
+                  </div>
+
+                  <div
+                    class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                  >
+                    Economy
+                  </div>
+                  <div class="package-card__price-text price">
+                    <div class="price__text_small strikethrough">200 sar</div>
+                    <div class="price__text_big">180 sar</div>
+                  </div>
+                  <div
+                    class="package-card__discription-text package-card__discription-text_grid"
+                  >
+                    <ul>
+                      <li>Nutrition plan</li>
+                      <li>nutrition lecture</li>
+                      <li>Heart zones adjustments</li>
+                      <li>once in 6 months</li>
+                      <li>Tutor's feedback</li>
+                      <li>once a month</li>
+
+                      <li>Sports gear selection</li>
+                      <li>guides</li>
+                      <li>Team's merchandise</li>
+                      <li>
+                        <div class="close-icon close-icon_red">
+                          <span></span>
+                        </div>
+                      </li>
+
+                      <li>Running technique review</li>
+                      <li>once a season</li>
+
+                      <li>Flexibility&mobility trainings</li>
+                      <li>
+                        <div class="close-icon close-icon_red">
+                          <span></span>
+                        </div>
+                      </li>
+
+                      <li>Accsess to the lecture&seminars databse</li>
+                      <li>
+                        <div class="checkmark-icon">L</div>
+                      </li>
+
+                      <li>Accsess to the team's chats&channels</li>
+                      <li>
+                        <div class="checkmark-icon">L</div>
+                      </li>
+
+                      <li>Race plan</li>
+                      <li>instruction</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="packages__package-card package-card full-card card full-card_light swiper-slide"
+                >
+                  <div class="package-card__image package-card__image_green">
+                    <img
+                      src="./assets/speedometer-medium-green.png"
+                      alt="speedometer on middle"
+                    />
+                  </div>
+
+                  <div
+                    class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                  >
+                    Standart
+                  </div>
+                  <div class="package-card__price-text price">
+                    <div class="price__text_small strikethrough">350 sar</div>
+                    <div class="price__text_big">300 sar</div>
+                  </div>
+                  <div
+                    class="package-card__discription-text package-card__discription-text_grid"
+                  >
+                    <ul>
+                      <li>Nutrition plan</li>
+                      <li>group consultation</li>
+                      <li>Heart zones adjustments</li>
+                      <li>once in 2 months</li>
+                      <li>Tutor's feedback</li>
+                      <li>once a week</li>
+
+                      <li>Sports gear selection</li>
+                      <li>seminar</li>
+                      <li>Team's merchandise</li>
+                      <li>included partly</li>
+
+                      <li>Running technique review</li>
+                      <li>once a season</li>
+
+                      <li>Flexibility&mobility trainings</li>
+                      <li>group</li>
+
+                      <li>Accsess to the lecture&seminars databse</li>
+                      <li>
+                        <div class="checkmark-icon">L</div>
+                      </li>
+
+                      <li>Accsess to the team's chats&channels</li>
+                      <li>
+                        <div class="checkmark-icon">L</div>
+                      </li>
+
+                      <li>Race plan</li>
+                      <li>seminar</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="packages__package-card package-card full-card card full-card_light swiper-slide"
+                >
+                  <div class="package-card__image package-card__image_green">
+                    <img
+                      src="./assets/speedometer-big-green.png"
+                      alt="speedometr on max"
+                    />
+                  </div>
+
+                  <div
+                    class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                  >
+                    VIP
+                  </div>
+                  <div class="package-card__price-text price">
+                    <div class="price__text_small strikethrough">1100 sar</div>
+                    <div class="price__text_big">1000 sar</div>
+                  </div>
+                  <div
+                    class="package-card__discription-text package-card__discription-text_grid"
+                  >
+                    <ul>
+                      <li>Nutrition plan</li>
+                      <li>personal consultation</li>
+                      <li>Heart zones adjustments</li>
+                      <li>as necessary</li>
+                      <li>Tutor's feedback</li>
+                      <li>every day</li>
+
+                      <li>Sports gear selection</li>
+                      <li>individual selection</li>
+                      <li>Team's merchandise</li>
+                      <li>included</li>
+
+                      <li>Running technique review</li>
+                      <li>once a month</li>
+
+                      <li>Flexibility&mobility trainings</li>
+                      <li>individual</li>
+
+                      <li>Accsess to the lecture&seminars databse</li>
+                      <li>
+                        <div class="checkmark-icon">L</div>
+                      </li>
+
+                      <li>Accsess to the team's chats&channels</li>
+                      <li>
+                        <div class="checkmark-icon">L</div>
+                      </li>
+
+                      <li>Race plan</li>
+                      <li>personal plan elaboration</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="package-card__actions">
+              <a href="#popup-form" class="button button_light popup-link"
+                >Buy membership</a
+              >
+            </div>
+          </div>
+          <div class="packages-popup_desk">
+            <div
+              class="content-programs__description-wrapper content-programs__description-wrapper_flex"
+            >
+              <div
+                class="packages__package-card package-card full-card card full-card_light"
+              >
+                <div class="package-card__image package-card__image_green">
+                  <img
+                    src="./assets/speedometer-small-green.png"
+                    alt="speedometr on min "
+                  />
+                </div>
+
+                <div
+                  class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                >
+                  Economy
+                </div>
+                <div class="package-card__price-text price">
+                  <div class="price__text_small strikethrough">200 sar</div>
+                  <div class="price__text_big">180 sar</div>
+                </div>
+                <div
+                  class="package-card__discription-text package-card__discription-text_grid"
+                >
                   <ul>
                     <li>Nutrition plan</li>
                     <li>nutrition lecture</li>
@@ -986,9 +1614,7 @@
                     <li>guides</li>
                     <li>Team's merchandise</li>
                     <li>
-                      <div class="close-icon close-icon_red">
-                        <span></span>
-                      </div>
+                      <div class="close-icon close-icon_red"><span></span></div>
                     </li>
 
                     <li>Running technique review</li>
@@ -996,9 +1622,7 @@
 
                     <li>Flexibility&mobility trainings</li>
                     <li>
-                      <div class="close-icon close-icon_red">
-                        <span></span>
-                      </div>
+                      <div class="close-icon close-icon_red"><span></span></div>
                     </li>
 
                     <li>Accsess to the lecture&seminars databse</li>
@@ -1015,20 +1639,34 @@
                     <li>instruction</li>
                   </ul>
                 </div>
+                <div class="package-card__actions">
+                  <a href="#popup-form" class="button button_accent popup-link"
+                    >Buy membership</a
+                  >
+                </div>
               </div>
-              <div class="packages__package-card package-card full-card card full-card_light swiper-slide">
+              <div
+                class="packages__package-card package-card full-card card full-card_light"
+              >
                 <div class="package-card__image package-card__image_green">
-                  <img src="./assets/speedometer-medium-green.png" alt="speedometer on middle" />
+                  <img
+                    src="./assets/speedometer-medium-green.png"
+                    alt="speedometer on middle"
+                  />
                 </div>
 
-                <div class="package-card__title-text subtitle1 subtitle1 underlined underlined_green">
+                <div
+                  class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                >
                   Standart
                 </div>
                 <div class="package-card__price-text price">
                   <div class="price__text_small strikethrough">350 sar</div>
                   <div class="price__text_big">300 sar</div>
                 </div>
-                <div class="package-card__discription-text package-card__discription-text_grid">
+                <div
+                  class="package-card__discription-text package-card__discription-text_grid"
+                >
                   <ul>
                     <li>Nutrition plan</li>
                     <li>group consultation</li>
@@ -1062,20 +1700,34 @@
                     <li>seminar</li>
                   </ul>
                 </div>
+                <div class="package-card__actions">
+                  <a href="#popup-form" class="button button_accent popup-link"
+                    >Buy membership</a
+                  >
+                </div>
               </div>
-              <div class="packages__package-card package-card full-card card full-card_light swiper-slide">
+              <div
+                class="packages__package-card package-card full-card card full-card_light"
+              >
                 <div class="package-card__image package-card__image_green">
-                  <img src="./assets/speedometer-big-green.png" alt="speedometr on max" />
+                  <img
+                    src="./assets/speedometer-big-green.png"
+                    alt="speedometr on max"
+                  />
                 </div>
 
-                <div class="package-card__title-text subtitle1 subtitle1 underlined underlined_green">
+                <div
+                  class="package-card__title-text subtitle1 subtitle1 underlined underlined_green"
+                >
                   VIP
                 </div>
                 <div class="package-card__price-text price">
                   <div class="price__text_small strikethrough">1100 sar</div>
                   <div class="price__text_big">1000 sar</div>
                 </div>
-                <div class="package-card__discription-text package-card__discription-text_grid">
+                <div
+                  class="package-card__discription-text package-card__discription-text_grid"
+                >
                   <ul>
                     <li>Nutrition plan</li>
                     <li>personal consultation</li>
@@ -1109,179 +1761,21 @@
                     <li>personal plan elaboration</li>
                   </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="package-card__actions">
-            <a href="#popup-form" class="button button_light popup-link">Buy membership</a>
-          </div>
-        </div>
-        <div class="packages-popup_desk">
-          <div class="content-programs__description-wrapper content-programs__description-wrapper_flex">
-            <div class="packages__package-card package-card full-card card full-card_light">
-              <div class="package-card__image package-card__image_green">
-                <img src="./assets/speedometer-small-green.png" alt="speedometr on min " />
-              </div>
-
-              <div class="package-card__title-text subtitle1 subtitle1 underlined underlined_green">
-                Economy
-              </div>
-              <div class="package-card__price-text price">
-                <div class="price__text_small strikethrough">200 sar</div>
-                <div class="price__text_big">180 sar</div>
-              </div>
-              <div class="package-card__discription-text package-card__discription-text_grid">
-                <ul>
-                  <li>Nutrition plan</li>
-                  <li>nutrition lecture</li>
-                  <li>Heart zones adjustments</li>
-                  <li>once in 6 months</li>
-                  <li>Tutor's feedback</li>
-                  <li>once a month</li>
-
-                  <li>Sports gear selection</li>
-                  <li>guides</li>
-                  <li>Team's merchandise</li>
-                  <li>
-                    <div class="close-icon close-icon_red"><span></span></div>
-                  </li>
-
-                  <li>Running technique review</li>
-                  <li>once a season</li>
-
-                  <li>Flexibility&mobility trainings</li>
-                  <li>
-                    <div class="close-icon close-icon_red"><span></span></div>
-                  </li>
-
-                  <li>Accsess to the lecture&seminars databse</li>
-                  <li>
-                    <div class="checkmark-icon">L</div>
-                  </li>
-
-                  <li>Accsess to the team's chats&channels</li>
-                  <li>
-                    <div class="checkmark-icon">L</div>
-                  </li>
-
-                  <li>Race plan</li>
-                  <li>instruction</li>
-                </ul>
-              </div>
-              <div class="package-card__actions">
-                <a href="#popup-form" class="button button_accent popup-link">Buy membership</a>
-              </div>
-            </div>
-            <div class="packages__package-card package-card full-card card full-card_light">
-              <div class="package-card__image package-card__image_green">
-                <img src="./assets/speedometer-medium-green.png" alt="speedometer on middle" />
-              </div>
-
-              <div class="package-card__title-text subtitle1 subtitle1 underlined underlined_green">
-                Standart
-              </div>
-              <div class="package-card__price-text price">
-                <div class="price__text_small strikethrough">350 sar</div>
-                <div class="price__text_big">300 sar</div>
-              </div>
-              <div class="package-card__discription-text package-card__discription-text_grid">
-                <ul>
-                  <li>Nutrition plan</li>
-                  <li>group consultation</li>
-                  <li>Heart zones adjustments</li>
-                  <li>once in 2 months</li>
-                  <li>Tutor's feedback</li>
-                  <li>once a week</li>
-
-                  <li>Sports gear selection</li>
-                  <li>seminar</li>
-                  <li>Team's merchandise</li>
-                  <li>included partly</li>
-
-                  <li>Running technique review</li>
-                  <li>once a season</li>
-
-                  <li>Flexibility&mobility trainings</li>
-                  <li>group</li>
-
-                  <li>Accsess to the lecture&seminars databse</li>
-                  <li>
-                    <div class="checkmark-icon">L</div>
-                  </li>
-
-                  <li>Accsess to the team's chats&channels</li>
-                  <li>
-                    <div class="checkmark-icon">L</div>
-                  </li>
-
-                  <li>Race plan</li>
-                  <li>seminar</li>
-                </ul>
-              </div>
-              <div class="package-card__actions">
-                <a href="#popup-form" class="button button_accent popup-link">Buy membership</a>
-              </div>
-            </div>
-            <div class="packages__package-card package-card full-card card full-card_light">
-              <div class="package-card__image package-card__image_green">
-                <img src="./assets/speedometer-big-green.png" alt="speedometr on max" />
-              </div>
-
-              <div class="package-card__title-text subtitle1 subtitle1 underlined underlined_green">
-                VIP
-              </div>
-              <div class="package-card__price-text price">
-                <div class="price__text_small strikethrough">1100 sar</div>
-                <div class="price__text_big">1000 sar</div>
-              </div>
-              <div class="package-card__discription-text package-card__discription-text_grid">
-                <ul>
-                  <li>Nutrition plan</li>
-                  <li>personal consultation</li>
-                  <li>Heart zones adjustments</li>
-                  <li>as necessary</li>
-                  <li>Tutor's feedback</li>
-                  <li>every day</li>
-
-                  <li>Sports gear selection</li>
-                  <li>individual selection</li>
-                  <li>Team's merchandise</li>
-                  <li>included</li>
-
-                  <li>Running technique review</li>
-                  <li>once a month</li>
-
-                  <li>Flexibility&mobility trainings</li>
-                  <li>individual</li>
-
-                  <li>Accsess to the lecture&seminars databse</li>
-                  <li>
-                    <div class="checkmark-icon">L</div>
-                  </li>
-
-                  <li>Accsess to the team's chats&channels</li>
-                  <li>
-                    <div class="checkmark-icon">L</div>
-                  </li>
-
-                  <li>Race plan</li>
-                  <li>personal plan elaboration</li>
-                </ul>
-              </div>
-              <div class="package-card__actions">
-                <a href="#popup-form" class="button button_accent popup-link">Buy membership</a>
+                <div class="package-card__actions">
+                  <a href="#popup-form" class="button button_accent popup-link"
+                    >Buy membership</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/phonemask.min.js"></script>
-  <script src="./js/phonemask.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/popups.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/phonemask.min.js"></script>
+    <script src="./js/phonemask.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/popups.js"></script>
+  </body>
 </html>
