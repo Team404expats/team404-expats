@@ -723,7 +723,6 @@ body.lock {
 .greeting__subtitle {
   padding-left: 45px;
   position: relative;
-  max-width: 200px;
 }
 .greeting__text {
   margin-top: 25px;
@@ -789,7 +788,6 @@ body.lock {
   .greeting__subtitle {
     padding-left: 40px;
     max-width: none;
-    margin-top: 25px;
   }
   .greeting__text {
     margin-left: 80px;
